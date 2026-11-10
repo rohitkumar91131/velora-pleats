@@ -830,9 +830,13 @@ code {
 }
 
 .home-gallery-section {
-  padding: 82px 24px 88px;
+  padding: 82px 24px 46px;
   background: var(--ivory);
   text-align: center;
+}
+
+.home-gallery-section + .editorial-section {
+  padding-top: 46px;
 }
 
 .home-gallery-heading {
@@ -1552,7 +1556,11 @@ code {
   }
 
   .home-gallery-section {
-    padding: 60px 18px 66px;
+    padding: 60px 18px 40px;
+  }
+
+  .home-gallery-section + .editorial-section {
+    padding-top: 38px;
   }
 
   .home-gallery-grid {
