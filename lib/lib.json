@@ -22,5 +22,50 @@
       { "label": "Get a Free Quote", "href": "/contact", "style": "outline" }
     ],
     "benefits": ["Elegant Design", "Everyday Comfort", "Custom-fit Solutions"]
+  },
+  "productSection": {
+    "eyebrow": "Our Product Range",
+    "heading": "Explore Our Solutions",
+    "description": "Thoughtfully selected screening solutions for balconies, windows and door openings.",
+    "listLabel": "Velora product range",
+    "viewDetailsLabel": "View details",
+    "products": [
+      {
+        "title": "Balcony Pleats",
+        "description": "Pleated mesh solutions for balconies and wider openings.",
+        "href": "/balcony-pleats",
+        "image": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg",
+        "imageAlt": "Bright modern living room opening onto a balcony",
+        "imageWidth": 4500,
+        "imageHeight": 3060
+      },
+      {
+        "title": "Window Pleats",
+        "description": "A neat, flexible screening option for modern windows.",
+        "href": "/window-pleats",
+        "image": "/product%20section%20homepage/window-pleats.jpg",
+        "imageAlt": "Contemporary dining area with large screened windows",
+        "imageWidth": 900,
+        "imageHeight": 600
+      },
+      {
+        "title": "Window Screens",
+        "description": "Practical screening solutions for everyday ventilation.",
+        "href": "/window-screens",
+        "image": "/product%20section%20homepage/window-screens.jpg",
+        "imageAlt": "Sunlit modern living room with wide windows",
+        "imageWidth": 900,
+        "imageHeight": 600
+      },
+      {
+        "title": "Pleated Mesh Doors",
+        "description": "Stylish mesh door solutions for comfortable living.",
+        "href": "/pleated-mesh-doors",
+        "image": "/product%20section%20homepage/pleated-mesh-doors.jpg",
+        "imageAlt": "Warm contemporary living room with a large glass doorway",
+        "imageWidth": 900,
+        "imageHeight": 675
+      }
+    ]
   }
 }
