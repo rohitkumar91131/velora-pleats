@@ -4,9 +4,29 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import site from "@/lib/lib.json";
 
-export default function SiteHeader() {
+type SiteHeaderProps = {
+  logo: string;
+  logoAlt: string;
+  logoHomeLabel: string;
+  mainNavigationLabel: string;
+  mobileNavigationLabel: string;
+  navigation: Array<{ label: string; href: string }>;
+  actions: {
+    quote: { label: string; href: string };
+    phone: { label: string; href: string; display: string };
+  };
+};
+
+export default function SiteHeader({
+  logo,
+  logoAlt,
+  logoHomeLabel,
+  mainNavigationLabel,
+  mobileNavigationLabel,
+  navigation,
+  actions,
+}: SiteHeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLElement>(null);
 
@@ -67,12 +87,12 @@ export default function SiteHeader() {
   return (
     <header className="site-header">
       <div className="header-inner">
-        <Link className="brand" href="/" aria-label="Velora Pleats home" onClick={closeMenu}>
-          <Image src="/logo.svg" alt="Velora Pleats" width={142} height={60} priority />
+        <Link className="brand" href="/" aria-label={logoHomeLabel} onClick={closeMenu}>
+          <Image src={logo} alt={logoAlt} width={142} height={60} priority />
         </Link>
 
-        <nav className="desktop-nav" aria-label="Main navigation">
-          {site.navigation.map((item) => (
+        <nav className="desktop-nav" aria-label={mainNavigationLabel}>
+          {navigation.map((item) => (
             <Link href={item.href} key={item.href}>
               {item.label}
             </Link>
@@ -80,10 +100,10 @@ export default function SiteHeader() {
         </nav>
 
         <div className="header-actions">
-          <Link className="quote-link" href={site.actions.quote.href}>
-            {site.actions.quote.label}<span aria-hidden="true">↗</span>
+          <Link className="quote-link" href={actions.quote.href}>
+            {actions.quote.label}<span aria-hidden="true">↗</span>
           </Link>
-          <a className="phone-link" href={site.actions.phone.href} aria-label={site.actions.phone.label}>
+          <a className="phone-link" href={actions.phone.href} aria-label={actions.phone.label}>
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M7.2 3.8 9.7 7l-1.6 2a14 14 0 0 0 6.9 6.9l2-1.6 3.2 2.5-.7 3.1c-.2.8-.9 1.3-1.7 1.3A16.8 16.8 0 0 1 2.8 5.2c0-.8.5-1.5 1.3-1.7l3.1-.7Z" />
             </svg>
@@ -105,20 +125,20 @@ export default function SiteHeader() {
       <nav
         className="mobile-nav"
         id="mobile-navigation"
-        aria-label="Mobile navigation"
+        aria-label={mobileNavigationLabel}
         aria-hidden={!menuOpen}
         ref={menuRef}
       >
-        {site.navigation.map((item) => (
+        {navigation.map((item) => (
           <Link href={item.href} key={item.href} onClick={closeMenu} tabIndex={menuOpen ? 0 : -1}>
             {item.label}<span aria-hidden="true">↗</span>
           </Link>
         ))}
-        <Link className="mobile-quote" href={site.actions.quote.href} onClick={closeMenu} tabIndex={menuOpen ? 0 : -1}>
-          {site.actions.quote.label}<span aria-hidden="true">↗</span>
+        <Link className="mobile-quote" href={actions.quote.href} onClick={closeMenu} tabIndex={menuOpen ? 0 : -1}>
+          {actions.quote.label}<span aria-hidden="true">↗</span>
         </Link>
-        <a className="mobile-phone" href={site.actions.phone.href} tabIndex={menuOpen ? 0 : -1}>
-          Call Velora · +91 90591 29812
+        <a className="mobile-phone" href={actions.phone.href} tabIndex={menuOpen ? 0 : -1}>
+          {actions.phone.label} · {actions.phone.display}
         </a>
       </nav>
     </header>

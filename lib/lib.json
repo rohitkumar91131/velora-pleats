@@ -1,4 +1,47 @@
 {
+  "site": {
+    "name": "Velora Pleats",
+    "defaultTitle": "Velora Pleats | Elegant Screening Solutions",
+    "defaultDescription": "Premium pleated mosquito mesh solutions for modern homes.",
+    "baseUrl": "https://www.velorapleats.com",
+    "logo": "/logo.svg",
+    "logoAlt": "Velora Pleats",
+    "logoHomeLabel": "Velora Pleats home",
+    "favicon": "/favicon.svg",
+    "phone": "90591 29812",
+    "phoneHref": "tel:+919059129812",
+    "phoneDisplay": "+91 90591 29812",
+    "email": "Velorapleats@gmail.com",
+    "emailHref": "mailto:Velorapleats@gmail.com",
+    "address": "2nd Floor, near fire station, Old Madras Rd, near BMTC Bus Depot, M V Extension, Hoskote, Karnataka 562114",
+    "website": "www.velorapleats.com",
+    "websiteHref": "https://www.velorapleats.com",
+    "whatsappHref": "https://wa.me/919059129812?text=Hello%20Velora%20Pleats%2C%20I%20would%20like%20a%20quotation.",
+    "whatsappLabel": "Chat on WhatsApp",
+    "sitemapRoutes": ["/", "/products", "/why-velora", "/gallery", "/about", "/contact", "/faqs", "/privacy", "/terms"],
+    "legacyRedirects": [
+      { "source": "/index.html", "destination": "/" },
+      { "source": "/products.html", "destination": "/products" },
+      { "source": "/balcony-pleats.html", "destination": "/products/balcony-pleats" },
+      { "source": "/window-pleats.html", "destination": "/products/window-pleats" },
+      { "source": "/window-screens.html", "destination": "/products/window-screens" },
+      { "source": "/pleated-mesh-doors.html", "destination": "/products/pleated-mesh-doors" },
+      { "source": "/why-velora.html", "destination": "/why-velora" },
+      { "source": "/gallery.html", "destination": "/gallery" },
+      { "source": "/about.html", "destination": "/about" },
+      { "source": "/contact.html", "destination": "/contact" },
+      { "source": "/faqs.html", "destination": "/faqs" },
+      { "source": "/privacy.html", "destination": "/privacy" },
+      { "source": "/terms.html", "destination": "/terms" }
+    ],
+    "copyright": "All rights reserved.",
+    "footerTagline": "Elegance in Every Opening."
+  },
+  "accessibility": {
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation",
+    "breadcrumbNavigation": "Breadcrumb"
+  },
   "navigation": [
     { "label": "Home", "href": "/" },
     { "label": "Products", "href": "/products" },
@@ -9,11 +52,15 @@
   ],
   "actions": {
     "quote": { "label": "Request a Quote", "href": "/contact" },
-    "phone": { "label": "Call Velora", "href": "tel:+919059129812" }
+    "phone": { "label": "Call Velora", "href": "tel:+919059129812", "display": "+91 90591 29812" }
   },
   "heroSection": {
     "desktopImage": "/hero%20section/hero-section-desktop.png",
+    "desktopImageWidth": 2172,
+    "desktopImageHeight": 724,
     "mobileImage": "/hero%20section/hero-section-mobile.png",
+    "mobileImageWidth": 1122,
+    "mobileImageHeight": 1402,
     "tagline": "Premium pleated mosquito mesh solutions",
     "heading": ["Let Fresh Air In.", "Keep Insects Out."],
     "description": "Elegant, space-saving mesh solutions that bring comfort, ventilation and a refined finish to modern homes.",
@@ -21,6 +68,7 @@
       { "label": "Explore Products", "href": "/products", "style": "gold" },
       { "label": "Get a Free Quote", "href": "/contact", "style": "outline" }
     ],
+    "benefitsLabel": "Velora benefits",
     "benefits": ["Elegant Design", "Everyday Comfort", "Custom-fit Solutions"]
   },
   "productSection": {
@@ -29,43 +77,324 @@
     "description": "Thoughtfully selected screening solutions for balconies, windows and door openings.",
     "listLabel": "Velora product range",
     "viewDetailsLabel": "View details",
-    "products": [
-      {
-        "title": "Balcony Pleats",
-        "description": "Pleated mesh solutions for balconies and wider openings.",
-        "href": "/balcony-pleats",
-        "image": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg",
-        "imageAlt": "Bright modern living room opening onto a balcony",
-        "imageWidth": 4500,
-        "imageHeight": 3060
-      },
-      {
-        "title": "Window Pleats",
-        "description": "A neat, flexible screening option for modern windows.",
-        "href": "/window-pleats",
-        "image": "/product%20section%20homepage/window-pleats.jpg",
-        "imageAlt": "Contemporary dining area with large screened windows",
-        "imageWidth": 900,
-        "imageHeight": 600
-      },
-      {
-        "title": "Window Screens",
-        "description": "Practical screening solutions for everyday ventilation.",
-        "href": "/window-screens",
-        "image": "/product%20section%20homepage/window-screens.jpg",
-        "imageAlt": "Sunlit modern living room with wide windows",
-        "imageWidth": 900,
-        "imageHeight": 600
-      },
-      {
-        "title": "Pleated Mesh Doors",
-        "description": "Stylish mesh door solutions for comfortable living.",
-        "href": "/pleated-mesh-doors",
-        "image": "/product%20section%20homepage/pleated-mesh-doors.jpg",
-        "imageAlt": "Warm contemporary living room with a large glass doorway",
-        "imageWidth": 900,
-        "imageHeight": 675
+    "productSlugs": ["balcony-pleats", "window-pleats", "window-screens", "pleated-mesh-doors"]
+  },
+  "productsPage": {
+    "href": "/products",
+    "seo": { "title": "Our Products | Velora Pleats", "description": "Explore Velora Pleats screening solutions for balconies, windows and doors." },
+    "hero": {
+      "eyebrow": "Discover the range",
+      "title": "Our Products",
+      "description": "Screening solutions designed for the openings and spaces in your home.",
+      "breadcrumbs": [{ "label": "Home", "href": "/" }, { "label": "Products" }]
+    },
+    "listLabel": "All Velora products",
+    "viewDetailsLabel": "Explore product"
+  },
+  "productDetailPage": {
+    "eyebrow": "Velora product collection",
+    "sectionEyebrow": "A refined fit for your home",
+    "galleryLabel": "Product images",
+    "quoteLabel": "Request a Quote",
+    "whatsappLabel": "WhatsApp"
+  },
+  "products": [
+    {
+      "name": "balcony-pleats",
+      "href": "/products/balcony-pleats",
+      "title": "Balcony Pleats",
+      "cardDescription": "Pleated mesh solutions for balconies and wider openings.",
+      "listingDescription": "A considered screening option for balconies and large openings.",
+      "detailDescription": "Elegant pleated mesh solutions for balconies and larger openings.",
+      "image": { "src": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg", "alt": "Bright modern living room opening onto a balcony", "width": 4500, "height": 3060 },
+      "images": [
+        { "src": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg", "alt": "Balcony Pleats in a bright modern home", "width": 4500, "height": 3060 },
+        { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Modern dining area with a wide screened opening", "width": 900, "height": 600 },
+        { "src": "/hero%20section/hero-section-mobile.png", "alt": "Pleated mesh across a residential balcony opening", "width": 1122, "height": 1402 }
+      ],
+      "features": [
+        "Designed to complement modern residential spaces",
+        "Helps create a barrier against insects",
+        "Supports airflow through the opening",
+        "Product configuration can be discussed to suit your space",
+        "Professional measurement and installation enquiry available"
+      ],
+      "seo": { "title": "Balcony Pleats | Velora Pleats", "description": "Elegant pleated mesh solutions for balconies and larger openings." },
+      "quoteHref": "/contact?product=Balcony%20Pleats",
+      "whatsappHref": "https://wa.me/919059129812?text=Hello%20Velora%2C%20I%20am%20interested%20in%20Balcony%20Pleats."
+    },
+    {
+      "name": "window-pleats",
+      "href": "/products/window-pleats",
+      "title": "Window Pleats",
+      "cardDescription": "A neat, flexible screening option for modern windows.",
+      "listingDescription": "Flexible pleated screening for window applications.",
+      "detailDescription": "A neat, flexible screening option for modern windows.",
+      "image": { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Contemporary dining area with large screened windows", "width": 900, "height": 600 },
+      "images": [
+        { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Window Pleats in a contemporary dining area", "width": 900, "height": 600 },
+        { "src": "/product%20section%20homepage/window-screens.jpg", "alt": "Large windows in a sunlit modern living room", "width": 900, "height": 600 },
+        { "src": "/hero%20section/hero-section-mobile.png", "alt": "Pleated screening across a residential glass opening", "width": 1122, "height": 1402 }
+      ],
+      "features": [
+        "Designed to complement modern residential spaces",
+        "Helps create a barrier against insects",
+        "Supports airflow through the opening",
+        "Product configuration can be discussed to suit your space",
+        "Professional measurement and installation enquiry available"
+      ],
+      "seo": { "title": "Window Pleats | Velora Pleats", "description": "Explore a neat, flexible pleated screening option for modern windows." },
+      "quoteHref": "/contact?product=Window%20Pleats",
+      "whatsappHref": "https://wa.me/919059129812?text=Hello%20Velora%2C%20I%20am%20interested%20in%20Window%20Pleats."
+    },
+    {
+      "name": "window-screens",
+      "href": "/products/window-screens",
+      "title": "Window Screens",
+      "cardDescription": "Practical screening solutions for everyday ventilation.",
+      "listingDescription": "Practical screens for everyday home ventilation.",
+      "detailDescription": "A simple way to add an insect-screening layer to selected window openings.",
+      "image": { "src": "/product%20section%20homepage/window-screens.jpg", "alt": "Sunlit modern living room with wide windows", "width": 900, "height": 600 },
+      "images": [
+        { "src": "/product%20section%20homepage/window-screens.jpg", "alt": "Window screens in a sunlit modern living room", "width": 900, "height": 600 },
+        { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Modern home interior with large windows", "width": 900, "height": 600 },
+        { "src": "/product%20section%20homepage/pleated-mesh-doors.jpg", "alt": "Bright living room with screened glass doors", "width": 900, "height": 675 }
+      ],
+      "features": [
+        "Designed to complement modern residential spaces",
+        "Helps create a barrier against insects",
+        "Supports airflow through the opening",
+        "Product configuration can be discussed to suit your space",
+        "Professional measurement and installation enquiry available"
+      ],
+      "seo": { "title": "Window Screens | Velora Pleats", "description": "Practical insect screening solutions for everyday window ventilation." },
+      "quoteHref": "/contact?product=Window%20Screens",
+      "whatsappHref": "https://wa.me/919059129812?text=Hello%20Velora%2C%20I%20am%20interested%20in%20Window%20Screens."
+    },
+    {
+      "name": "pleated-mesh-doors",
+      "href": "/products/pleated-mesh-doors",
+      "title": "Pleated Mesh Doors",
+      "cardDescription": "Stylish mesh door solutions for comfortable living.",
+      "listingDescription": "Mesh door solutions that balance function and appearance.",
+      "detailDescription": "Stylish pleated mesh door solutions for comfortable living.",
+      "image": { "src": "/product%20section%20homepage/pleated-mesh-doors.jpg", "alt": "Warm contemporary living room with a large glass doorway", "width": 900, "height": 675 },
+      "images": [
+        { "src": "/product%20section%20homepage/pleated-mesh-doors.jpg", "alt": "Pleated Mesh Doors in a warm contemporary living room", "width": 900, "height": 675 },
+        { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Contemporary residential glass opening", "width": 900, "height": 600 },
+        { "src": "/hero%20section/hero-section-mobile.png", "alt": "Pleated mesh door beside a modern living space", "width": 1122, "height": 1402 }
+      ],
+      "features": [
+        "Designed to complement modern residential spaces",
+        "Helps create a barrier against insects",
+        "Supports airflow through the opening",
+        "Product configuration can be discussed to suit your space",
+        "Professional measurement and installation enquiry available"
+      ],
+      "seo": { "title": "Pleated Mesh Doors | Velora Pleats", "description": "Stylish mesh door solutions for comfortable, well-ventilated living." },
+      "quoteHref": "/contact?product=Pleated%20Mesh%20Doors",
+      "whatsappHref": "https://wa.me/919059129812?text=Hello%20Velora%2C%20I%20am%20interested%20in%20Pleated%20Mesh%20Doors."
+    }
+  ],
+  "homeSections": {
+    "difference": {
+      "eyebrow": "The Velora difference",
+      "heading": "Comfort, protection and considered design.",
+      "description": "A well-designed mesh solution should work beautifully and feel at home in your space. Velora brings together practical screening and a clean architectural look.",
+      "image": { "src": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg", "alt": "Considered mesh screening in a contemporary home", "width": 4500, "height": 3060 },
+      "cta": { "label": "Why Choose Velora", "href": "/why-velora" },
+      "features": [
+        { "title": "Insect Protection", "description": "Helps keep unwanted insects outside your living spaces." },
+        { "title": "Natural Ventilation", "description": "Enjoy airflow while adding a screening layer." },
+        { "title": "Modern Aesthetics", "description": "A discreet look designed to complement your home." },
+        { "title": "Custom Fit", "description": "Solutions planned around your opening and requirements." }
+      ]
+    },
+    "galleryPreview": {
+      "eyebrow": "Made for modern living",
+      "heading": "Designed Around Your Space",
+      "description": "Explore screening possibilities for the places where you relax, gather and enjoy fresh air.",
+      "cta": { "label": "View the Gallery", "href": "/gallery" },
+      "images": [
+        { "src": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg", "alt": "Modern balcony and living area", "width": 4500, "height": 3060 },
+        { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Window setting in a modern home", "width": 900, "height": 600 },
+        { "src": "/product%20section%20homepage/window-screens.jpg", "alt": "Sunlit modern home interior", "width": 900, "height": 600 },
+        { "src": "/product%20section%20homepage/pleated-mesh-doors.jpg", "alt": "Interior opening with pleated mesh doors", "width": 900, "height": 675 },
+        { "src": "/hero%20section/hero-section-desktop.png", "alt": "Modern living room and screened balcony", "width": 2172, "height": 724 },
+        { "src": "/hero%20section/hero-section-mobile.png", "alt": "Pleated screen across a residential balcony", "width": 1122, "height": 1402 }
+      ]
+    },
+    "nextStep": {
+      "eyebrow": "Your next step",
+      "heading": "A better opening starts here.",
+      "description": "Tell us about your home and the openings you would like to screen. Our team can help you explore a suitable solution.",
+      "cta": { "label": "Request a Free Quote", "href": "/contact" }
+    }
+  },
+  "pages": {
+    "about": {
+      "seo": { "title": "About Us | Velora Pleats", "description": "Learn about Velora Pleats and our considered approach to home screening." },
+      "hero": { "eyebrow": "Our story", "title": "About Velora Pleats", "description": "Premium pleated mosquito mesh solutions for more comfortable, considered living spaces.", "breadcrumbs": [{ "label": "Home", "href": "/" }, { "label": "About Us" }] },
+      "section": {
+        "eyebrow": "Who we are",
+        "heading": "Elegance in Every Opening.",
+        "paragraphs": [
+          "Velora Pleats brings together modern screening solutions and a design-led approach to residential living.",
+          "Our focus is to help homeowners explore practical mesh options that complement the look and feel of their spaces.",
+          "From balconies and windows to mesh doors, we aim to make product discovery, measurement and quotation straightforward."
+        ],
+        "image": { "src": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg", "alt": "Warm modern home interior", "width": 4500, "height": 3060 },
+        "cta": { "label": "Connect With Velora", "href": "/contact" }
       }
-    ]
-  }
+    },
+    "whyVelora": {
+      "seo": { "title": "Why Velora | Velora Pleats", "description": "Explore a considered approach to comfort, insect screening and home design." },
+      "hero": { "eyebrow": "The Velora difference", "title": "Thoughtful Screening. Beautiful Living.", "description": "A balance of everyday comfort, functional protection and a look that complements your home.", "breadcrumbs": [{ "label": "Home", "href": "/" }, { "label": "Why Velora" }] },
+      "section": {
+        "eyebrow": "Why choose Velora",
+        "heading": "A considered solution for modern homes.",
+        "description": "We believe screening should feel like a natural part of your home—not an afterthought. Velora focuses on solutions that bring together usability, appearance and a thoughtful fit.",
+        "image": { "src": "/product%20section%20homepage/window-screens.jpg", "alt": "Contemporary residential interior", "width": 900, "height": 600 },
+        "cta": { "label": "Talk to Our Team", "href": "/contact" },
+        "features": [
+          { "title": "Insect Screening", "description": "A screening layer to help keep insects out." },
+          { "title": "Airflow", "description": "Enjoy natural ventilation through screened openings." },
+          { "title": "Aesthetics", "description": "Clean visual lines for contemporary residential spaces." },
+          { "title": "Fit & Installation", "description": "Discuss your measurements and installation requirements with our team." }
+        ]
+      }
+    },
+    "gallery": {
+      "seo": { "title": "Gallery | Velora Pleats", "description": "Explore visual inspiration for balconies, windows and door openings." },
+      "hero": { "eyebrow": "Ideas for your space", "title": "Installation Gallery", "description": "Explore visual inspiration for balconies, windows and door openings.", "breadcrumbs": [{ "label": "Home", "href": "/" }, { "label": "Gallery" }] },
+      "filterLabel": "Filter gallery by opening type",
+      "filters": [
+        { "label": "All", "value": "all" },
+        { "label": "Balcony", "value": "balcony" },
+        { "label": "Windows", "value": "windows" },
+        { "label": "Doors", "value": "doors" }
+      ],
+      "images": [
+        { "src": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg", "alt": "Balcony screening inspiration", "width": 4500, "height": 3060, "category": "balcony" },
+        { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Window screening inspiration", "width": 900, "height": 600, "category": "windows" },
+        { "src": "/product%20section%20homepage/window-screens.jpg", "alt": "Window screen inspiration", "width": 900, "height": 600, "category": "windows" },
+        { "src": "/product%20section%20homepage/pleated-mesh-doors.jpg", "alt": "Mesh door inspiration", "width": 900, "height": 675, "category": "doors" },
+        { "src": "/hero%20section/hero-section-desktop.png", "alt": "Balcony and living space inspiration", "width": 2172, "height": 724, "category": "balcony" },
+        { "src": "/hero%20section/hero-section-mobile.png", "alt": "Modern home opening inspiration", "width": 1122, "height": 1402, "category": "doors" }
+      ],
+      "note": "Images are illustrative design references. Replace with verified Velora project photographs as installations are completed."
+    },
+    "faqs": {
+      "seo": { "title": "FAQs | Velora Pleats", "description": "Answers to common questions about Velora Pleats products, quotations and installation." },
+      "hero": { "eyebrow": "Helpful information", "title": "Frequently Asked Questions", "description": "A few useful answers before you get started.", "breadcrumbs": [{ "label": "Home", "href": "/" }, { "label": "FAQs" }] },
+      "questions": [
+        { "question": "What products does Velora Pleats offer?", "answer": "Velora Pleats showcases Balcony Pleats, Window Pleats, Window Screens and Pleated Mesh Doors." },
+        { "question": "How do I request a quotation?", "answer": "Use the enquiry form on this website or contact our team by phone or WhatsApp. Share your city, product requirement and approximate opening measurements if available." },
+        { "question": "Do you provide measurement and installation?", "answer": "Please contact our team to confirm measurement and installation availability for your location and project." },
+        { "question": "Can I choose a frame finish or configuration?", "answer": "Available finishes and configurations depend on the product. Share your requirements with our team for current options." },
+        { "question": "How do I maintain the mesh?", "answer": "Follow the care guidance supplied with your selected product. Avoid harsh chemicals or forceful handling unless the product instructions specifically allow them." }
+      ],
+      "cta": { "label": "Have another question? Contact our team", "href": "/contact" }
+    },
+    "contact": {
+      "seo": { "title": "Contact Us | Velora Pleats", "description": "Tell Velora Pleats about your project and request a quotation." },
+      "hero": { "eyebrow": "We would love to hear from you", "title": "Let's Talk About Your Space.", "description": "Share your requirement and request a quotation for your home.", "breadcrumbs": [{ "label": "Home", "href": "/" }, { "label": "Contact" }] },
+      "detailsHeading": "Get in Touch",
+      "contactEyebrow": "Contact details",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "addressLabel": "Address",
+      "websiteLabel": "Website",
+      "whatsappLabel": "Chat on WhatsApp",
+      "formEyebrow": "Quotation request",
+      "formHeading": "Request a Free Quote",
+      "formDescription": "Fill in your details and our team can get back to you.",
+      "selectPrompt": "Select an option",
+      "fastResponseNote": "For a faster response, contact us directly by phone or WhatsApp.",
+      "fields": [
+        { "name": "name", "type": "text", "label": "Full name", "placeholder": "Your name", "required": true },
+        { "name": "phone", "type": "tel", "label": "Mobile number", "placeholder": "Your phone number", "required": true },
+        { "name": "city", "type": "text", "label": "City", "placeholder": "e.g. Bengaluru", "required": false },
+        { "name": "product", "type": "select", "label": "Product requirement", "required": false, "options": ["Balcony Pleats", "Window Pleats", "Window Screens", "Pleated Mesh Doors", "Multiple products", "Not sure yet"] },
+        { "name": "property", "type": "select", "label": "Property type", "required": false, "options": ["Apartment", "Villa", "Independent house", "Commercial", "Other"] },
+        { "name": "message", "type": "textarea", "label": "Your requirements", "placeholder": "Tell us about the number of openings, approximate dimensions or any questions.", "required": false }
+      ],
+      "submitLabel": "Submit Enquiry",
+      "subject": "VELORA PLEATS - Website Enquiry",
+      "mailBodyLabels": { "name": "Name", "phone": "Phone", "city": "City", "product": "Product", "property": "Property", "message": "Requirements" },
+      "successMessage": "Your email app should open with your enquiry details. You can also contact us directly on WhatsApp.",
+      "demoNote": "Static demo form: submission opens your default email application. Connect a form backend before publishing for direct lead capture."
+    },
+    "privacy": {
+      "seo": { "title": "Privacy Policy | Velora Pleats", "description": "How Velora Pleats handles information shared through enquiries." },
+      "hero": { "eyebrow": "", "title": "Privacy Policy", "description": "How enquiry information is handled.", "breadcrumbs": [{ "label": "Home", "href": "/" }, { "label": "Privacy Policy" }] },
+      "sections": [
+        { "heading": "Information you provide", "paragraphs": ["When you contact Velora Pleats or submit an enquiry, you may provide your name, phone number, city, product interest and project details. This information should be used to respond to your enquiry and provide relevant service information."] },
+        { "heading": "How information is used", "paragraphs": ["Enquiry information may be used to contact you, understand your requirements, prepare quotations and coordinate follow-up. Do not submit sensitive personal information through the website."] },
+        { "heading": "Third-party services", "paragraphs": ["The website may link to services such as WhatsApp, email and analytics providers. Their own privacy terms apply when you use those services."] },
+        { "heading": "Contact", "paragraphs": ["For privacy-related questions, contact Velorapleats@gmail.com."] }
+      ],
+      "reviewNote": "Note: This is starter policy copy and should be reviewed for your actual business practices before launch."
+    },
+    "terms": {
+      "seo": { "title": "Terms & Conditions | Velora Pleats", "description": "Website information and enquiry terms for Velora Pleats." },
+      "hero": { "eyebrow": "", "title": "Terms & Conditions", "description": "Website information and enquiry terms.", "breadcrumbs": [{ "label": "Home", "href": "/" }, { "label": "Terms" }] },
+      "sections": [
+        { "heading": "Website information", "paragraphs": ["Product descriptions and images on this website are provided for general information and may be updated. Final product availability, specifications, finishes, pricing, warranty and installation scope must be confirmed in a written quotation."] },
+        { "heading": "Illustrative images", "paragraphs": ["Some images in this starter website are illustrative references and may not depict actual Velora products or completed installations."] },
+        { "heading": "Quotations", "paragraphs": ["Submitting an enquiry does not constitute an order or guarantee of availability. A project is confirmed only after the relevant details and terms have been agreed with Velora Pleats."] },
+        { "heading": "Contact", "paragraphs": ["For questions, contact Velorapleats@gmail.com or 90591 29812."] }
+      ],
+      "reviewNote": "Note: Have this page reviewed and adapted to your final business terms before publishing."
+    }
+  },
+  "productExperience": {
+    "eyebrow": "Product experience",
+    "heading": "Made to work with your space.",
+    "paragraphs": ["Every opening is different.", "Share your requirements with our team to discuss the suitable product configuration, finish and installation approach."],
+    "cta": { "label": "Discuss Your Requirement", "href": "/contact" }
+  },
+  "homeCta": {
+    "eyebrow": "A better way to enjoy your home",
+    "heading": "Ready to upgrade your openings?",
+    "description": "Get a free consultation and quotation from Velora Pleats.",
+    "cta": { "label": "Request a Free Quote", "href": "/contact" }
+  },
+  "footer": {
+    "description": "Premium pleated mosquito mesh solutions that bring together comfort, protection and modern aesthetics.",
+    "groups": [
+      { "heading": "Explore", "links": [
+        { "label": "All Products", "href": "/products" },
+        { "label": "Balcony Pleats", "href": "/products/balcony-pleats" },
+        { "label": "Window Pleats", "href": "/products/window-pleats" },
+        { "label": "Window Screens", "href": "/products/window-screens" },
+        { "label": "Pleated Mesh Doors", "href": "/products/pleated-mesh-doors" }
+      ] },
+      { "heading": "Discover", "links": [
+        { "label": "Why Velora", "href": "/why-velora" },
+        { "label": "Gallery", "href": "/gallery" },
+        { "label": "About Us", "href": "/about" },
+        { "label": "FAQs", "href": "/faqs" },
+        { "label": "Contact", "href": "/contact" }
+      ] }
+    ],
+    "legalLinks": [
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Terms & Conditions", "href": "/terms" }
+    ],
+    "contactHeading": "Get in touch",
+    "legalNavLabel": "Legal information"
+  },
+  "mobileActionsLabel": "Contact Velora",
+  "mobileActions": [
+    { "label": "WhatsApp", "href": "https://wa.me/919059129812?text=Hello%20Velora%20Pleats%2C%20I%20would%20like%20a%20quotation.", "style": "whatsapp" },
+    { "label": "Request a Quote", "href": "/contact", "style": "quote" }
+  ],
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for may have moved or is no longer available.",
+    "linkLabel": "Return to Home",
+    "linkHref": "/"
+  },
+  "robots": { "userAgent": "*", "allow": "/" }
 }

@@ -39,7 +39,7 @@ export default function HeroSection() {
           ))}
         </div>
 
-        <ul className="hero-benefits" aria-label="Velora benefits">
+        <ul className="hero-benefits" aria-label={heroSection.benefitsLabel}>
           {heroSection.benefits.map((benefit) => <li key={benefit}>{benefit}</li>)}
         </ul>
       </div>

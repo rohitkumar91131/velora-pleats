@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
 import SiteHeader from "@/components/SiteHeader";
+import CallToAction from "@/components/CallToAction";
+import SiteFooter from "@/components/SiteFooter";
+import MobileActionBar from "@/components/MobileActionBar";
+import site from "@/lib/lib.json";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Velora Pleats | Elegant Screening Solutions",
-  description: "Premium pleated mosquito mesh solutions for modern homes.",
+  metadataBase: new URL(site.site.baseUrl),
+  title: site.site.defaultTitle,
+  description: site.site.defaultDescription,
+  icons: { icon: site.site.favicon },
 };
 
 export default function RootLayout({
@@ -15,8 +21,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <SiteHeader />
+        <SiteHeader
+          logo={site.site.logo}
+          logoAlt={site.site.logoAlt}
+          logoHomeLabel={site.site.logoHomeLabel}
+          mainNavigationLabel={site.accessibility.mainNavigation}
+          mobileNavigationLabel={site.accessibility.mobileNavigation}
+          navigation={site.navigation}
+          actions={site.actions}
+        />
         {children}
+        <CallToAction data={site.homeCta} />
+        <SiteFooter />
+        <MobileActionBar />
       </body>
     </html>
   );
