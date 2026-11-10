@@ -23,7 +23,7 @@ export default function SiteHeader() {
       gsap.fromTo(
         menu,
         { height: 0, autoAlpha: 0, y: -8 },
-        { height: "auto", autoAlpha: 1, y: 0, duration, ease: "power3.out", clearProps: "height" },
+        { height: "auto", autoAlpha: 1, y: 0, duration, ease: "power3.out" },
       );
     } else if (window.matchMedia("(max-width: 960px)").matches) {
       gsap.killTweensOf(menu);
