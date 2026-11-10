@@ -1314,7 +1314,6 @@ code {
 .cta-band {
   padding: 49px 24px;
   border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
   background: var(--ivory);
   color: var(--ink);
 }
