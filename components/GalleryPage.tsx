@@ -10,7 +10,6 @@ export default function GalleryPage() {
       <section className="gallery-section">
         <div className="gallery-inner">
           <GalleryGrid images={page.images} filters={page.filters} filterLabel={page.filterLabel} />
-          <p className="gallery-note">{page.note}</p>
         </div>
       </section>
     </main>

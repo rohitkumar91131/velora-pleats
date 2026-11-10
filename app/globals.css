@@ -1124,13 +1124,6 @@ code {
   height: auto;
 }
 
-.gallery-note {
-  margin: 22px 0 0;
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.7;
-}
-
 .contact-section {
   padding: 66px 24px 88px;
   background: var(--ivory);
@@ -1649,6 +1642,7 @@ code {
     flex: 1;
     align-items: center;
     justify-content: center;
+    gap: 7px;
     padding: 8px;
     color: var(--ink);
     font-size: 11px;
@@ -1659,6 +1653,16 @@ code {
 
   .mobile-sticky-whatsapp {
     border: 1px solid var(--gold);
+  }
+
+  .mobile-sticky-phone {
+    border: 1px solid var(--line);
+  }
+
+  .mobile-sticky-icon {
+    width: 17px;
+    height: 17px;
+    flex: 0 0 auto;
   }
 
   .mobile-sticky-quote {
