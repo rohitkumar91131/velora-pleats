@@ -11,7 +11,7 @@
     "quote": { "label": "Request a Quote", "href": "/contact" },
     "phone": { "label": "Call Velora", "href": "tel:+919059129812" }
   },
-  "hero": {
+  "heroSection": {
     "desktopImage": "/hero%20section/hero-section-desktop.png",
     "mobileImage": "/hero%20section/hero-section-mobile.png",
     "tagline": "Premium pleated mosquito mesh solutions",

@@ -3,16 +3,16 @@ import Link from "next/link";
 import site from "@/lib/lib.json";
 
 export default function HeroSection() {
-  const { hero } = site;
+  const { heroSection } = site;
 
   return (
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero-background" aria-hidden="true">
         <picture className="hero-picture">
-          <source media="(max-width: 720px)" srcSet={hero.mobileImage} />
+          <source media="(max-width: 720px)" srcSet={heroSection.mobileImage} />
           <Image
             className="hero-image"
-            src={hero.desktopImage}
+            src={heroSection.desktopImage}
             alt=""
             fill
             priority
@@ -23,15 +23,15 @@ export default function HeroSection() {
       </div>
 
       <div className="hero-content">
-        <p className="hero-tagline">{hero.tagline}</p>
+        <p className="hero-tagline">{heroSection.tagline}</p>
         <h1 className="hero-title" id="hero-title">
-          <span>{hero.heading[0]}</span>
-          <span className="hero-title-accent">{hero.heading[1]}</span>
+          <span>{heroSection.heading[0]}</span>
+          <span className="hero-title-accent">{heroSection.heading[1]}</span>
         </h1>
-        <p className="hero-description">{hero.description}</p>
+        <p className="hero-description">{heroSection.description}</p>
 
         <div className="hero-actions">
-          {hero.buttons.map((button) => (
+          {heroSection.buttons.map((button) => (
             <Link className={`hero-button hero-button-${button.style}`} href={button.href} key={button.label}>
               {button.label}
               <span aria-hidden="true">{button.style === "gold" ? "→" : "↗"}</span>
@@ -40,7 +40,7 @@ export default function HeroSection() {
         </div>
 
         <ul className="hero-benefits" aria-label="Velora benefits">
-          {hero.benefits.map((benefit) => <li key={benefit}>{benefit}</li>)}
+          {heroSection.benefits.map((benefit) => <li key={benefit}>{benefit}</li>)}
         </ul>
       </div>
     </section>
