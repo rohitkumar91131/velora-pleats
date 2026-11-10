@@ -139,7 +139,7 @@ body {
   position: relative;
   isolation: isolate;
   display: grid;
-  min-height: clamp(460px, 38vw, 680px);
+  aspect-ratio: 3 / 1;
   overflow: hidden;
   align-items: center;
   justify-items: center;
@@ -171,21 +171,17 @@ body {
 }
 
 .hero-shade {
-  background: rgb(255 253 248 / 12%);
+  background: linear-gradient(90deg, rgb(18 17 15 / 66%) 0%, rgb(18 17 15 / 42%) 52%, rgb(18 17 15 / 30%) 100%);
 }
 
 .hero-content {
   width: min(100%, 820px);
   margin: auto;
-  padding: clamp(18px, 2.5vw, 36px);
-  border: 1px solid var(--line);
-  background: var(--paper);
-  box-shadow: 0 18px 44px var(--shadow);
 }
 
 .hero-tagline {
   margin: 0 0 15px;
-  color: var(--gold-on-light);
+  color: var(--gold);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.22em;
@@ -201,18 +197,18 @@ body {
   font-size: clamp(2.5rem, 6.2vw, 5.25rem);
   font-weight: 400;
   letter-spacing: -0.035em;
-  line-height: 0.98;
+  line-height: 0.84;
   text-wrap: balance;
 }
 
 .hero-title-accent {
-  color: var(--gold-on-light);
+  color: var(--gold);
 }
 
 .hero-description {
   max-width: 590px;
   margin: 24px auto 0;
-  color: var(--muted);
+  color: var(--paper);
   font-size: 16px;
   line-height: 1.75;
   text-wrap: pretty;
@@ -234,7 +230,7 @@ body {
   gap: 10px;
   padding: 0 21px;
   border: 1px solid var(--gold);
-  color: var(--ink);
+  color: var(--paper);
   font-size: 12px;
   font-weight: 700;
   text-decoration: none;
@@ -267,7 +263,7 @@ body {
   flex-wrap: wrap;
   margin: 27px 0 0;
   padding: 0;
-  color: var(--ink);
+  color: var(--paper);
   font-size: 11px;
   letter-spacing: 0.035em;
   list-style: none;
@@ -276,11 +272,11 @@ body {
 .hero-benefits li::before {
   content: "✦";
   margin-right: 9px;
-  color: var(--gold-on-light);
+  color: var(--gold);
 }
 
 .hero-button:focus-visible {
-  outline: 2px solid var(--gold-on-light);
+  outline: 2px solid var(--gold);
   outline-offset: 4px;
 }
 
@@ -419,7 +415,7 @@ body {
   }
 
   .hero-shade {
-    background: rgb(255 253 248 / 12%);
+    background: linear-gradient(180deg, rgb(18 17 15 / 34%) 0%, rgb(18 17 15 / 48%) 45%, rgb(18 17 15 / 62%) 100%);
   }
 
   .hero-tagline {
@@ -431,7 +427,7 @@ body {
 
   .hero-title {
     font-size: clamp(2.35rem, 9.2vw, 3.5rem);
-    line-height: 1.02;
+    line-height: 0.88;
   }
 
   .hero-description {
@@ -504,6 +500,15 @@ body {
 @media (max-width: 380px) {
   .hero-title { font-size: 2.2rem; }
   .hero-actions { flex-direction: column; }
+}
+
+@media (min-width: 721px) and (max-width: 1200px) {
+  .hero { padding: 12px; }
+  .hero-title { font-size: clamp(2.5rem, 5vw, 4rem); }
+  .hero-tagline { margin-bottom: 9px; font-size: 10px; }
+  .hero-description { margin-top: 12px; font-size: 14px; line-height: 1.5; }
+  .hero-actions { gap: 10px; margin-top: 18px; }
+  .hero-benefits { gap: 18px; margin-top: 16px; }
 }
 
 @media (min-width: 721px) and (max-width: 960px) {
