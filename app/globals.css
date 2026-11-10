@@ -735,6 +735,11 @@ code {
   text-align: center;
 }
 
+.editorial-main.is-centered .editorial-description {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .editorial-copy {
   width: 100%;
 }
