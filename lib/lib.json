@@ -106,11 +106,11 @@
       "cardDescription": "Pleated mesh solutions for balconies and wider openings.",
       "listingDescription": "A considered screening option for balconies and large openings.",
       "detailDescription": "Elegant pleated mesh solutions for balconies and larger openings.",
-      "image": { "src": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg", "alt": "Bright modern living room opening onto a balcony", "width": 4500, "height": 3060 },
+      "image": { "src": "/images/products/balcony-pleats.jpg", "alt": "Bright modern living room opening onto a balcony", "width": 1800, "height": 1224 },
       "images": [
-        { "src": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg", "alt": "Balcony Pleats in a bright modern home", "width": 4500, "height": 3060 },
-        { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Modern dining area with a wide screened opening", "width": 900, "height": 600 },
-        { "src": "/hero%20section/hero-section-mobile.png", "alt": "Pleated mesh across a residential balcony opening", "width": 1122, "height": 1402 }
+        { "src": "/images/products/balcony-pleats.jpg", "alt": "Balcony Pleats in a bright modern home", "width": 1800, "height": 1224 },
+        { "src": "/images/products/window-pleats.jpg", "alt": "Modern dining area with a wide screened opening", "width": 1800, "height": 1200 },
+        { "src": "/images/why-velora/considered-living.jpg", "alt": "Pleated mesh across a residential balcony opening", "width": 1800, "height": 1200 }
       ],
       "features": [
         "Designed to complement modern residential spaces",
@@ -130,11 +130,11 @@
       "cardDescription": "A neat, flexible screening option for modern windows.",
       "listingDescription": "Flexible pleated screening for window applications.",
       "detailDescription": "A neat, flexible screening option for modern windows.",
-      "image": { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Contemporary dining area with large screened windows", "width": 900, "height": 600 },
+      "image": { "src": "/images/products/window-pleats.jpg", "alt": "Contemporary dining area with large screened windows", "width": 1800, "height": 1200 },
       "images": [
-        { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Window Pleats in a contemporary dining area", "width": 900, "height": 600 },
-        { "src": "/product%20section%20homepage/window-screens.jpg", "alt": "Large windows in a sunlit modern living room", "width": 900, "height": 600 },
-        { "src": "/hero%20section/hero-section-mobile.png", "alt": "Pleated screening across a residential glass opening", "width": 1122, "height": 1402 }
+        { "src": "/images/products/window-pleats.jpg", "alt": "Window Pleats in a contemporary dining area", "width": 1800, "height": 1200 },
+        { "src": "/images/about/modern-interior.jpg", "alt": "Large windows in a sunlit modern living room", "width": 1800, "height": 1200 },
+        { "src": "/images/why-velora/considered-living.jpg", "alt": "Pleated screening across a residential glass opening", "width": 1800, "height": 1200 }
       ],
       "features": [
         "Designed to complement modern residential spaces",
@@ -154,11 +154,11 @@
       "cardDescription": "Practical screening solutions for everyday ventilation.",
       "listingDescription": "Practical screens for everyday home ventilation.",
       "detailDescription": "A simple way to add an insect-screening layer to selected window openings.",
-      "image": { "src": "/product%20section%20homepage/window-screens.jpg", "alt": "Sunlit modern living room with wide windows", "width": 900, "height": 600 },
+      "image": { "src": "/images/products/window-screens.jpg", "alt": "Sunlit modern living room with wide windows", "width": 1800, "height": 1200 },
       "images": [
-        { "src": "/product%20section%20homepage/window-screens.jpg", "alt": "Window screens in a sunlit modern living room", "width": 900, "height": 600 },
-        { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Modern home interior with large windows", "width": 900, "height": 600 },
-        { "src": "/product%20section%20homepage/pleated-mesh-doors.jpg", "alt": "Bright living room with screened glass doors", "width": 900, "height": 675 }
+        { "src": "/images/products/window-screens.jpg", "alt": "Window screens in a sunlit modern living room", "width": 1800, "height": 1200 },
+        { "src": "/images/products/window-pleats.jpg", "alt": "Modern home interior with large windows", "width": 1800, "height": 1200 },
+        { "src": "/images/products/pleated-mesh-doors.jpg", "alt": "Bright living room with screened glass doors", "width": 1800, "height": 1350 }
       ],
       "features": [
         "Designed to complement modern residential spaces",
@@ -178,11 +178,11 @@
       "cardDescription": "Stylish mesh door solutions for comfortable living.",
       "listingDescription": "Mesh door solutions that balance function and appearance.",
       "detailDescription": "Stylish pleated mesh door solutions for comfortable living.",
-      "image": { "src": "/product%20section%20homepage/pleated-mesh-doors.jpg", "alt": "Warm contemporary living room with a large glass doorway", "width": 900, "height": 675 },
+      "image": { "src": "/images/products/pleated-mesh-doors.jpg", "alt": "Warm contemporary living room with a large glass doorway", "width": 1800, "height": 1350 },
       "images": [
-        { "src": "/product%20section%20homepage/pleated-mesh-doors.jpg", "alt": "Pleated Mesh Doors in a warm contemporary living room", "width": 900, "height": 675 },
-        { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Contemporary residential glass opening", "width": 900, "height": 600 },
-        { "src": "/hero%20section/hero-section-mobile.png", "alt": "Pleated mesh door beside a modern living space", "width": 1122, "height": 1402 }
+        { "src": "/images/products/pleated-mesh-doors.jpg", "alt": "Pleated Mesh Doors in a warm contemporary living room", "width": 1800, "height": 1350 },
+        { "src": "/images/products/window-pleats.jpg", "alt": "Contemporary residential glass opening", "width": 1800, "height": 1200 },
+        { "src": "/images/why-velora/considered-living.jpg", "alt": "Pleated mesh door beside a modern living space", "width": 1800, "height": 1200 }
       ],
       "features": [
         "Designed to complement modern residential spaces",
@@ -201,7 +201,7 @@
       "eyebrow": "The Velora difference",
       "heading": "Comfort, protection and considered design.",
       "description": "A well-designed mesh solution should work beautifully and feel at home in your space. Velora brings together practical screening and a clean architectural look.",
-      "image": { "src": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg", "alt": "Considered mesh screening in a contemporary home", "width": 4500, "height": 3060 },
+      "image": { "src": "/images/why-velora/considered-living.jpg", "alt": "Considered mesh screening in a contemporary home", "width": 1800, "height": 1200 },
       "cta": { "label": "Why Choose Velora", "href": "/why-velora" },
       "features": [
         { "title": "Insect Protection", "description": "Helps keep unwanted insects outside your living spaces." },
@@ -216,12 +216,12 @@
       "description": "Explore screening possibilities for the places where you relax, gather and enjoy fresh air.",
       "cta": { "label": "View the Gallery", "href": "/gallery" },
       "images": [
-        { "src": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg", "alt": "Modern balcony and living area", "width": 4500, "height": 3060 },
-        { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Window setting in a modern home", "width": 900, "height": 600 },
-        { "src": "/product%20section%20homepage/window-screens.jpg", "alt": "Sunlit modern home interior", "width": 900, "height": 600 },
-        { "src": "/product%20section%20homepage/pleated-mesh-doors.jpg", "alt": "Interior opening with pleated mesh doors", "width": 900, "height": 675 },
-        { "src": "/hero%20section/hero-section-desktop.png", "alt": "Modern living room and screened balcony", "width": 2172, "height": 724 },
-        { "src": "/hero%20section/hero-section-mobile.png", "alt": "Pleated screen across a residential balcony", "width": 1122, "height": 1402 }
+        { "src": "/images/products/balcony-pleats.jpg", "alt": "Modern balcony and living area", "width": 1800, "height": 1224 },
+        { "src": "/images/products/window-pleats.jpg", "alt": "Window setting in a modern home", "width": 1800, "height": 1200 },
+        { "src": "/images/products/window-screens.jpg", "alt": "Sunlit modern home interior", "width": 1800, "height": 1200 },
+        { "src": "/images/products/pleated-mesh-doors.jpg", "alt": "Interior opening with pleated mesh doors", "width": 1800, "height": 1350 },
+        { "src": "/images/why-velora/considered-living.jpg", "alt": "Modern living room and screened balcony", "width": 1800, "height": 1200 },
+        { "src": "/images/about/modern-interior.jpg", "alt": "Pleated screen across a residential balcony", "width": 1800, "height": 1200 }
       ]
     },
     "nextStep": {
@@ -243,7 +243,7 @@
           "Our focus is to help homeowners explore practical mesh options that complement the look and feel of their spaces.",
           "From balconies and windows to mesh doors, we aim to make product discovery, measurement and quotation straightforward."
         ],
-        "image": { "src": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg", "alt": "Warm modern home interior", "width": 4500, "height": 3060 },
+        "image": { "src": "/images/about/modern-interior.jpg", "alt": "Warm modern home interior", "width": 1800, "height": 1200 },
         "cta": { "label": "Connect With Velora", "href": "/contact" }
       }
     },
@@ -254,7 +254,7 @@
         "eyebrow": "Why choose Velora",
         "heading": "A considered solution for modern homes.",
         "description": "We believe screening should feel like a natural part of your home—not an afterthought. Velora focuses on solutions that bring together usability, appearance and a thoughtful fit.",
-        "image": { "src": "/product%20section%20homepage/window-screens.jpg", "alt": "Contemporary residential interior", "width": 900, "height": 600 },
+        "image": { "src": "/images/why-velora/considered-living.jpg", "alt": "Contemporary residential interior", "width": 1800, "height": 1200 },
         "cta": { "label": "Talk to Our Team", "href": "/contact" },
         "features": [
           { "title": "Insect Screening", "description": "A screening layer to help keep insects out." },
@@ -275,12 +275,12 @@
         { "label": "Doors", "value": "doors" }
       ],
       "images": [
-        { "src": "/product%20section%20homepage/homepage-product-section-balcony-pleats.jpeg", "alt": "Balcony screening inspiration", "width": 4500, "height": 3060, "category": "balcony" },
-        { "src": "/product%20section%20homepage/window-pleats.jpg", "alt": "Window screening inspiration", "width": 900, "height": 600, "category": "windows" },
-        { "src": "/product%20section%20homepage/window-screens.jpg", "alt": "Window screen inspiration", "width": 900, "height": 600, "category": "windows" },
-        { "src": "/product%20section%20homepage/pleated-mesh-doors.jpg", "alt": "Mesh door inspiration", "width": 900, "height": 675, "category": "doors" },
-        { "src": "/hero%20section/hero-section-desktop.png", "alt": "Balcony and living space inspiration", "width": 2172, "height": 724, "category": "balcony" },
-        { "src": "/hero%20section/hero-section-mobile.png", "alt": "Modern home opening inspiration", "width": 1122, "height": 1402, "category": "doors" }
+        { "src": "/images/products/balcony-pleats.jpg", "alt": "Balcony screening inspiration", "width": 1800, "height": 1224, "category": "balcony" },
+        { "src": "/images/products/window-pleats.jpg", "alt": "Window screening inspiration", "width": 1800, "height": 1200, "category": "windows" },
+        { "src": "/images/products/window-screens.jpg", "alt": "Window screen inspiration", "width": 1800, "height": 1200, "category": "windows" },
+        { "src": "/images/products/pleated-mesh-doors.jpg", "alt": "Mesh door inspiration", "width": 1800, "height": 1350, "category": "doors" },
+        { "src": "/images/why-velora/considered-living.jpg", "alt": "Balcony and living space inspiration", "width": 1800, "height": 1200, "category": "balcony" },
+        { "src": "/images/about/modern-interior.jpg", "alt": "Modern home opening inspiration", "width": 1800, "height": 1200, "category": "doors" }
       ],
       "note": "Images are illustrative design references. Replace with verified Velora project photographs as installations are completed."
     },
