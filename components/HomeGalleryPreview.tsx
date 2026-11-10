@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import site from "@/lib/lib.json";
 
 export default function HomeGalleryPreview() {
@@ -18,7 +17,6 @@ export default function HomeGalleryPreview() {
           </li>
         ))}
       </ul>
-      <Link className="text-action home-gallery-link" href={data.cta.href}>{data.cta.label}<span aria-hidden="true"> →</span></Link>
     </section>
   );
 }

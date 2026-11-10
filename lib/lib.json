@@ -214,7 +214,6 @@
       "eyebrow": "Made for modern living",
       "heading": "Designed Around Your Space",
       "description": "Explore screening possibilities for the places where you relax, gather and enjoy fresh air.",
-      "cta": { "label": "View the Gallery", "href": "/gallery" },
       "images": [
         { "src": "/images/products/balcony-pleats.jpg", "alt": "Modern balcony and living area", "width": 1800, "height": 1224 },
         { "src": "/images/products/window-pleats.jpg", "alt": "Window setting in a modern home", "width": 1800, "height": 1200 },
