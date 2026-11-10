@@ -18,7 +18,7 @@ export default function EditorialSection({
   centered = false,
 }: {
   data: EditorialData;
-  variant?: "light" | "dark";
+  variant?: "light" | "soft";
   imageSide?: "left" | "right";
   centered?: boolean;
 }) {

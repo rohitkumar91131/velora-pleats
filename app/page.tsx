@@ -9,7 +9,7 @@ export default function Home() {
     <main className="home-page">
       <HeroSection />
       <ProductSection />
-      <EditorialSection data={site.homeSections.difference} variant="dark" />
+      <EditorialSection data={site.homeSections.difference} variant="soft" />
       <HomeGalleryPreview />
       <EditorialSection data={site.homeSections.nextStep} centered />
     </main>

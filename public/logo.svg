@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 110">
 <rect width="260" height="110" fill="none"/>
 <path d="M28 10 L73 10 L112 74 L150 10 L174 10 L119 96 L95 96 Z" fill="#c8a45e"/>
-<path d="M145 20 L158 12 L158 91 L145 99 Z M163 12 L176 7 L176 91 L163 96 Z" fill="none" stroke="#f2dfb5" stroke-width="3"/>
-<text x="130" y="103" text-anchor="middle" font-family="Georgia,serif" font-size="27" letter-spacing="8" fill="#f7f2e9">VELORA</text>
+<path d="M145 20 L158 12 L158 91 L145 99 Z M163 12 L176 7 L176 91 L163 96 Z" fill="none" stroke="#c5a15d" stroke-width="3"/>
+<text x="130" y="103" text-anchor="middle" font-family="Georgia,serif" font-size="27" letter-spacing="8" fill="#12110f">VELORA</text>
 <text x="130" y="110" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" letter-spacing="5" fill="#c8a45e">PLEATS</text>
 </svg>

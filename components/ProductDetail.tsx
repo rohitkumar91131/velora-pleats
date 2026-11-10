@@ -34,7 +34,7 @@ export default function ProductDetail({ product, hero }: { product: Product; her
           </div>
         </div>
       </section>
-      <EditorialSection data={site.productExperience} variant="dark" />
+      <EditorialSection data={site.productExperience} variant="soft" />
     </main>
   );
 }
