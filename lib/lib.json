@@ -320,8 +320,7 @@
       "submitLabel": "Submit Enquiry",
       "subject": "VELORA PLEATS - Website Enquiry",
       "mailBodyLabels": { "name": "Name", "phone": "Phone", "city": "City", "product": "Product", "property": "Property", "message": "Requirements" },
-      "successMessage": "Your email app should open with your enquiry details. You can also contact us directly on WhatsApp.",
-      "demoNote": "Static demo form: submission opens your default email application. Connect a form backend before publishing for direct lead capture."
+      "successMessage": "Your email app should open with your enquiry details. You can also contact us directly on WhatsApp."
     },
     "privacy": {
       "seo": { "title": "Privacy Policy | Velora Pleats", "description": "How Velora Pleats handles information shared through enquiries." },

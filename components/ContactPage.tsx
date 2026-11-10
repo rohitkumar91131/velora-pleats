@@ -29,7 +29,6 @@ export default function ContactPage() {
             <h2>{page.formHeading}</h2>
             <p className="form-description">{page.formDescription}</p>
             <EnquiryForm data={page} recipient={brand.email} />
-            <p className="form-demo-note">{page.demoNote}</p>
           </div>
         </div>
       </section>

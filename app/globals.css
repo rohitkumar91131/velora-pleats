@@ -1311,13 +1311,6 @@ code {
   line-height: 1.6;
 }
 
-.form-demo-note {
-  margin: 18px 0 0;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.65;
-}
-
 .cta-band {
   padding: 49px 24px;
   border-top: 1px solid var(--line);
