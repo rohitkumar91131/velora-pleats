@@ -138,11 +138,11 @@ body {
   position: relative;
   isolation: isolate;
   display: grid;
-  min-height: clamp(610px, 72svh, 680px);
+  aspect-ratio: 3 / 1;
   overflow: hidden;
   align-items: center;
   justify-items: center;
-  padding: 72px 24px 64px;
+  padding: 24px;
   color: var(--paper);
   background: var(--ink);
   text-align: center;
@@ -165,10 +165,8 @@ body {
 }
 
 .hero-image {
-  object-fit: cover;
-  object-position: center 54%;
-  filter: blur(2px);
-  transform: scale(1.015);
+  object-fit: contain;
+  filter: blur(1.5px);
 }
 
 .hero-shade {
@@ -283,12 +281,8 @@ body {
 
 @media (max-width: 720px) {
   .hero {
-    min-height: max(650px, calc(100svh - 72px));
-    padding: 62px 20px 70px;
-  }
-
-  .hero-image {
-    object-position: center 52%;
+    aspect-ratio: 1122 / 1500;
+    padding: 30px 20px;
   }
 
   .hero-shade {
