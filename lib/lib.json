@@ -10,5 +10,17 @@
   "actions": {
     "quote": { "label": "Request a Quote", "href": "/contact" },
     "phone": { "label": "Call Velora", "href": "tel:+919059129812" }
+  },
+  "hero": {
+    "desktopImage": "/hero%20section/hero-section-desktop.png",
+    "mobileImage": "/hero%20section/hero-section-mobile.png",
+    "tagline": "Premium pleated mosquito mesh solutions",
+    "heading": ["Let Fresh Air In.", "Keep Insects Out."],
+    "description": "Elegant, space-saving mesh solutions that bring comfort, ventilation and a refined finish to modern homes.",
+    "buttons": [
+      { "label": "Explore Products", "href": "/products", "style": "gold" },
+      { "label": "Get a Free Quote", "href": "/contact", "style": "outline" }
+    ],
+    "benefits": ["Elegant Design", "Everyday Comfort", "Custom-fit Solutions"]
   }
 }
