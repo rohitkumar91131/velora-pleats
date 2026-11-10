@@ -281,7 +281,7 @@ body {
 
 @media (max-width: 720px) {
   .hero {
-    aspect-ratio: 1122 / 1500;
+    aspect-ratio: 1122 / 1402;
     padding: 30px 20px;
   }
 
