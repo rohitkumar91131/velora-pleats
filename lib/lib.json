@@ -1,0 +1,14 @@
+{
+  "navigation": [
+    { "label": "Home", "href": "/" },
+    { "label": "Products", "href": "/products" },
+    { "label": "Why Velora", "href": "/why-velora" },
+    { "label": "Gallery", "href": "/gallery" },
+    { "label": "About Us", "href": "/about" },
+    { "label": "Contact Us", "href": "/contact" }
+  ],
+  "actions": {
+    "quote": { "label": "Request a Quote", "href": "/contact" },
+    "phone": { "label": "Call Velora", "href": "tel:+919059129812" }
+  }
+}
