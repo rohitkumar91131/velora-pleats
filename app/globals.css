@@ -1376,7 +1376,6 @@ code {
 
 .site-footer {
   padding: 56px 24px 22px;
-  border-top: 1px solid var(--line);
   background: var(--paper);
   color: var(--ink);
 }
