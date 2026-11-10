@@ -624,8 +624,8 @@ code {
   position: relative;
   overflow: hidden;
   padding: 35px 24px 54px;
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--ivory);
+  color: var(--ink);
 }
 
 .page-hero-inner,
@@ -641,7 +641,7 @@ code {
   flex-wrap: wrap;
   gap: 7px;
   margin-bottom: 33px;
-  color: var(--dark-muted);
+  color: var(--muted);
   font-size: 11px;
   line-height: 1.5;
 }
@@ -652,7 +652,7 @@ code {
 }
 
 .breadcrumbs a {
-  color: var(--gold);
+  color: var(--gold-on-light);
   text-decoration: none;
 }
 
@@ -662,7 +662,7 @@ code {
 }
 
 .breadcrumb-separator {
-  color: var(--dark-muted);
+  color: var(--muted);
 }
 
 .page-hero-eyebrow,
@@ -674,6 +674,10 @@ code {
   letter-spacing: 0.2em;
   line-height: 1.5;
   text-transform: uppercase;
+}
+
+.page-hero-eyebrow {
+  color: var(--gold-on-light);
 }
 
 .page-hero h1 {
@@ -690,7 +694,7 @@ code {
 .page-hero-description {
   max-width: 62ch;
   margin: 16px 0 0;
-  color: var(--dark-copy);
+  color: var(--muted);
   font-size: 15px;
   line-height: 1.7;
 }
