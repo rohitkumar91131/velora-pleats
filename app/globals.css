@@ -290,10 +290,10 @@ body {
   }
 
   .hero-tagline {
-    max-width: 28ch;
     margin: 0 auto 18px;
-    font-size: 10px;
-    letter-spacing: 0.18em;
+    font-size: clamp(7px, 2.4vw, 10px);
+    letter-spacing: clamp(0.03em, 0.45vw, 0.1em);
+    white-space: nowrap;
   }
 
   .hero-title {
