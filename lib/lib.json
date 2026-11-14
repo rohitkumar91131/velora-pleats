@@ -107,7 +107,12 @@
       }
     ],
     "benefitsLabel": "Velora benefits",
-    "benefits": ["Elegant Design", "Everyday Comfort", "Custom-fit Solutions"],
+    "benefits": [
+      { "label": "Elegant Design", "icon": "elegant-design" },
+      { "label": "Insect Protection", "icon": "insect-protection" },
+      { "label": "Natural Ventilation", "icon": "natural-ventilation" },
+      { "label": "Custom-Fit Installation", "icon": "custom-fit" }
+    ],
     "carouselLabel": "Featured Velora solutions",
     "slideLabel": "Hero slide",
     "showSlideControls": true

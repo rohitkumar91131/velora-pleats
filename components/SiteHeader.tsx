@@ -68,12 +68,19 @@ export default function SiteHeader({
     if (menuOpen) {
       gsap.killTweensOf(menu);
       gsap.set(menu, { visibility: "visible" });
-      gsap.fromTo(menu, { height: 0, autoAlpha: 0, y: -8 }, { height: "auto", autoAlpha: 1, y: 0, duration, ease: "power3.out" });
+      gsap.fromTo(menu, { clipPath: "inset(0 0 100% 0)", autoAlpha: 0 }, { clipPath: "inset(0 0 0% 0)", autoAlpha: 1, duration, ease: "power3.out" });
     } else if (window.matchMedia("(max-width: 960px)").matches) {
       gsap.killTweensOf(menu);
-      gsap.to(menu, { height: 0, autoAlpha: 0, y: -8, duration, ease: "power2.inOut", onComplete: () => gsap.set(menu, { visibility: "hidden" }) });
+      gsap.to(menu, { clipPath: "inset(0 0 100% 0)", autoAlpha: 0, duration, ease: "power2.inOut", onComplete: () => gsap.set(menu, { visibility: "hidden" }) });
     }
     return () => { gsap.killTweensOf(menu); };
+  }, [menuOpen]);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = previousOverflow; };
   }, [menuOpen]);
 
   useEffect(() => {
@@ -136,7 +143,7 @@ export default function SiteHeader({
                     alt={product.alt}
                     width={product.desktopImageWidth}
                     height={product.desktopImageHeight}
-                    sizes="(max-width: 1200px) 22vw, 250px"
+                    sizes="(max-width: 1400px) 24vw, 320px"
                   />
                 </span>
                 <span className="mega-menu-card-copy">

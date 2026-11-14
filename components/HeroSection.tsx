@@ -25,6 +25,22 @@ function SlideImage({ slide, className }: { slide: HeroSlide; className: string 
   );
 }
 
+function HeroBenefitIcon({ name }: { name: string }) {
+  const icons = {
+    "elegant-design": <><path d="M12 2.8 14.7 8l5.7.8-4.1 4 .9 5.7-5.2-2.7-5.2 2.7.9-5.7-4.1-4 5.7-.8L12 2.8Z" /><path d="m9.7 12.1 1.5 1.5 3.2-3.3" /></>,
+    "insect-protection": <><circle cx="12" cy="7" r="2.2" /><path d="M12 9.3v7.2m-3.6-5.8L5.7 9m4.1 4-4.1 1.4m9.9-5.9L18.3 9m-2.6 4 4.1 1.4M9.3 17l-2 2m7.4-2 2 2M9 7H6m9 0h3" /></>,
+    "natural-ventilation": <><path d="M3 8h11.2a2.2 2.2 0 1 0-2-3.1M3 12h16a2.2 2.2 0 1 1-2.1 3.1M3 16h8.2a2.2 2.2 0 1 0-2-3.1" /></>,
+    "custom-fit": <><path d="M8 3H4v4m12-4h4v4M4 17v4h4m12-4v4h-4M8 8h8v8H8z" /><path d="M10 12h4m-2-2v4" /></>,
+  };
+  const icon = icons[name as keyof typeof icons] ?? <><circle cx="12" cy="12" r="8.5" /><path d="m8.5 12 2.2 2.2 4.8-5" /></>;
+
+  return (
+    <svg className="hero-benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      {icon}
+    </svg>
+  );
+}
+
 export default function HeroSection() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [incomingIndex, setIncomingIndex] = useState<number | null>(null);
@@ -118,7 +134,12 @@ export default function HeroSection() {
           </div>
         </div>
         <ul className="hero-benefits" aria-label={heroSection.benefitsLabel}>
-          {heroSection.benefits.map((benefit) => <li key={benefit}>{benefit}</li>)}
+          {heroSection.benefits.map((benefit) => (
+            <li key={benefit.label}>
+              <HeroBenefitIcon name={benefit.icon} />
+              <span>{benefit.label}</span>
+            </li>
+          ))}
         </ul>
         {heroSection.showSlideControls && (
           <div className="hero-controls" aria-label={heroSection.carouselLabel}>
