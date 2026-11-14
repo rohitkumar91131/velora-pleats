@@ -93,6 +93,7 @@ export default function SiteHeader({
   useEffect(() => {
     const desktop = window.matchMedia("(min-width: 961px)");
     const closeOnDesktop = (event: MediaQueryListEvent) => {
+      setProductsOpen(false);
       if (event.matches) {
         setMenuOpen(false);
         setMobileProductsOpen(false);
@@ -153,7 +154,7 @@ export default function SiteHeader({
   return (
     <header className={`site-header${isHome ? " is-home" : ""}`} onMouseLeave={() => setProductsOpen(false)}>
       <div className="header-inner">
-        <Link className="brand" href="/" aria-label={logoHomeLabel} onClick={closeMenu}>
+        <Link className="brand" href="/" aria-label={logoHomeLabel} onClick={closeMenu} onMouseEnter={() => setProductsOpen(false)} onFocus={() => setProductsOpen(false)}>
           <Image src={logo} alt={logoAlt} width={142} height={60} priority />
         </Link>
 
@@ -171,13 +172,19 @@ export default function SiteHeader({
               {productsOpen && renderDesktopProducts()}
             </div>
           ) : (
-            <Link href={item.href} key={item.href}>{item.label}</Link>
+            <Link
+              href={item.href}
+              key={item.href}
+              onMouseEnter={() => setProductsOpen(false)}
+              onFocus={() => setProductsOpen(false)}
+              onClick={closeMenu}
+            >{item.label}</Link>
           ))}
         </nav>
 
-        <div className="header-actions">
-          <Link className="quote-link" href={actions.quote.href}>{actions.quote.label}<span aria-hidden="true">↗</span></Link>
-          <a className="phone-link" href={actions.phone.href} aria-label={actions.phone.label}>
+        <div className="header-actions" onMouseEnter={() => setProductsOpen(false)} onFocus={() => setProductsOpen(false)}>
+          <Link className="quote-link" href={actions.quote.href} onClick={closeMenu}>{actions.quote.label}<span aria-hidden="true">↗</span></Link>
+          <a className="phone-link" href={actions.phone.href} aria-label={actions.phone.label} onClick={closeMenu}>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 3.8 9.7 7l-1.6 2a14 14 0 0 0 6.9 6.9l2-1.6 3.2 2.5-.7 3.1c-.2.8-.9 1.3-1.7 1.3A16.8 16.8 0 0 1 2.8 5.2c0-.8.5-1.5 1.3-1.7l3.1-.7Z" /></svg>
           </a>
         </div>
@@ -191,6 +198,15 @@ export default function SiteHeader({
           onClick={() => setMenuOpen((open) => !open)}
         ><span /><span /><span /></button>
       </div>
+
+      {productsOpen && (
+        <div
+          className="mega-backdrop"
+          aria-hidden="true"
+          onMouseEnter={() => setProductsOpen(false)}
+          onClick={() => setProductsOpen(false)}
+        />
+      )}
 
       <nav className="mobile-nav" id="mobile-navigation" aria-label={mobileNavigationLabel} aria-hidden={!menuOpen} ref={menuRef}>
         {navigation.map((item) => item.hasMegaMenu ? (
