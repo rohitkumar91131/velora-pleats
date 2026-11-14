@@ -38,6 +38,7 @@ export default function HeroSection() {
   const heroRatios = {
     "--hero-desktop-ratio": `${slides[0].desktopImageWidth} / ${slides[0].desktopImageHeight}`,
     "--hero-mobile-ratio": `${slides[0].mobileImageWidth} / ${slides[0].mobileImageHeight}`,
+    "--hero-interval": `${heroSection.interval}ms`,
   } as CSSProperties;
 
   const changeSlide = useCallback((nextIndex: number) => {

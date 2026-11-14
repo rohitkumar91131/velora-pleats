@@ -31,7 +31,6 @@ type SiteHeaderProps = {
   navigation: Array<{ label: string; href: string; hasMegaMenu?: boolean }>;
   productMegaMenu: {
     label: string;
-    exploreLabel: string;
     mobileToggleLabel: string;
     products: MenuProduct[];
   };
@@ -142,7 +141,6 @@ export default function SiteHeader({
                 <span className="mega-menu-card-copy">
                   <span className="mega-menu-title">{product.title}</span>
                   <span className="mega-menu-description">{product.description}</span>
-                  <span className="mega-menu-link">{productMegaMenu.exploreLabel} <span aria-hidden="true">↗</span></span>
                 </span>
               </Link>
             ))}
@@ -217,7 +215,6 @@ export default function SiteHeader({
                   <span className="mobile-product-copy">
                     <span className="mega-menu-title">{product.title}</span>
                     <span className="mega-menu-description">{product.description}</span>
-                    <span className="mega-menu-link">{productMegaMenu.exploreLabel} <span aria-hidden="true">↗</span></span>
                   </span>
                 </Link>
               ))}
