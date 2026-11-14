@@ -62,11 +62,11 @@
     "slides": [
       {
         "desktopImage": "/hero%20section/first%20/desktop.png",
-        "desktopImageWidth": 1122,
-        "desktopImageHeight": 1402,
+        "desktopImageWidth": 1789,
+        "desktopImageHeight": 879,
         "mobileImage": "/hero%20section/first%20/mobile.png",
-        "mobileImageWidth": 1789,
-        "mobileImageHeight": 879,
+        "mobileImageWidth": 1122,
+        "mobileImageHeight": 1402,
         "tagline": "Made for the way you live",
         "heading": ["Let Fresh Air In.", "Keep Insects Out."],
         "description": "Pleated screens that bring comfort and a considered finish to your home.",
@@ -77,11 +77,11 @@
       },
       {
         "desktopImage": "/hero%20section/second/desktop.png",
-        "desktopImageWidth": 1122,
-        "desktopImageHeight": 1402,
+        "desktopImageWidth": 1789,
+        "desktopImageHeight": 879,
         "mobileImage": "/hero%20section/second/mobile.png",
-        "mobileImageWidth": 1789,
-        "mobileImageHeight": 879,
+        "mobileImageWidth": 1122,
+        "mobileImageHeight": 1402,
         "tagline": "A refined fit for your windows",
         "heading": ["A Clearer View.", "A More Comfortable Home."],
         "description": "Explore flexible screening made for everyday living and natural airflow.",
@@ -92,11 +92,11 @@
       },
       {
         "desktopImage": "/hero%20section/third/desktop.png",
-        "desktopImageWidth": 1122,
-        "desktopImageHeight": 1402,
+        "desktopImageWidth": 1789,
+        "desktopImageHeight": 879,
         "mobileImage": "/hero%20section/third/mobile.png",
-        "mobileImageWidth": 1789,
-        "mobileImageHeight": 879,
+        "mobileImageWidth": 1122,
+        "mobileImageHeight": 1402,
         "tagline": "Designed around your opening",
         "heading": ["Everyday Protection.", "Thoughtful Design."],
         "description": "Discover elegant pleated mesh solutions for balconies, windows and doors.",
@@ -116,10 +116,10 @@
     "label": "Explore our products",
     "mobileToggleLabel": "Show product categories",
     "products": [
-      { "slug": "balcony-pleats", "desktopImage": "/navbar/balcony%20pleats/desktop.png", "mobileImage": "/navbar/balcony%20pleats/mobile.png", "desktopImageWidth": 1254, "desktopImageHeight": 1254, "mobileImageWidth": 941, "mobileImageHeight": 1672 },
-      { "slug": "window-pleats", "desktopImage": "/navbar/window%20pleats/desktop.png", "mobileImage": "/navbar/window%20pleats/mobile.png", "desktopImageWidth": 1254, "desktopImageHeight": 1254, "mobileImageWidth": 941, "mobileImageHeight": 1672 },
-      { "slug": "window-screens", "desktopImage": "/navbar/window%20screans/desktop.png", "mobileImage": "/navbar/window%20screans/mobile.png", "desktopImageWidth": 1254, "desktopImageHeight": 1254, "mobileImageWidth": 941, "mobileImageHeight": 1672 },
-      { "slug": "pleated-mesh-doors", "desktopImage": "/navbar/pleated%20mesh%20doors/desktop.png", "mobileImage": "/navbar/pleated%20mesh%20doors/mobile.png", "desktopImageWidth": 1254, "desktopImageHeight": 1254, "mobileImageWidth": 941, "mobileImageHeight": 1672 }
+      { "slug": "balcony-pleats", "desktopImage": "/navbar/balcony%20pleats/desktop.png", "mobileImage": "/navbar/balcony%20pleats/mobile.png", "desktopImageWidth": 941, "desktopImageHeight": 1672, "mobileImageWidth": 1254, "mobileImageHeight": 1254 },
+      { "slug": "window-pleats", "desktopImage": "/navbar/window%20pleats/desktop.png", "mobileImage": "/navbar/window%20pleats/mobile.png", "desktopImageWidth": 941, "desktopImageHeight": 1672, "mobileImageWidth": 1254, "mobileImageHeight": 1254 },
+      { "slug": "window-screens", "desktopImage": "/navbar/window%20screans/desktop.png", "mobileImage": "/navbar/window%20screans/mobile.png", "desktopImageWidth": 941, "desktopImageHeight": 1672, "mobileImageWidth": 1254, "mobileImageHeight": 1254 },
+      { "slug": "pleated-mesh-doors", "desktopImage": "/navbar/pleated%20mesh%20doors/desktop.png", "mobileImage": "/navbar/pleated%20mesh%20doors/mobile.png", "desktopImageWidth": 941, "desktopImageHeight": 1672, "mobileImageWidth": 1254, "mobileImageHeight": 1254 }
     ]
   },
   "productSection": {
