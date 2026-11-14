@@ -40,11 +40,13 @@
   "accessibility": {
     "mainNavigation": "Main navigation",
     "mobileNavigation": "Mobile navigation",
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation",
     "breadcrumbNavigation": "Breadcrumb"
   },
   "navigation": [
     { "label": "Home", "href": "/" },
-    { "label": "Products", "href": "/products" },
+    { "label": "Products", "href": "/products", "hasMegaMenu": true },
     { "label": "Why Velora", "href": "/why-velora" },
     { "label": "Gallery", "href": "/gallery" },
     { "label": "About Us", "href": "/about" },
@@ -55,21 +57,71 @@
     "phone": { "label": "Call Velora", "href": "tel:+919059129812", "display": "+91 90591 29812" }
   },
   "heroSection": {
-    "desktopImage": "/hero%20section/hero-section-desktop.png",
-    "desktopImageWidth": 2172,
-    "desktopImageHeight": 724,
-    "mobileImage": "/hero%20section/hero-section-mobile.png",
-    "mobileImageWidth": 1122,
-    "mobileImageHeight": 1402,
-    "tagline": "Premium pleated mosquito mesh solutions",
-    "heading": ["Let Fresh Air In.", "Keep Insects Out."],
-    "description": "Elegant, space-saving mesh solutions that bring comfort, ventilation and a refined finish to modern homes.",
-    "buttons": [
-      { "label": "Explore Products", "href": "/products", "style": "gold" },
-      { "label": "Get a Free Quote", "href": "/contact", "style": "outline" }
+    "interval": 5000,
+    "transitionDuration": 0.8,
+    "slides": [
+      {
+        "desktopImage": "/hero%20section/first%20/desktop.png",
+        "desktopImageWidth": 1789,
+        "desktopImageHeight": 879,
+        "mobileImage": "/hero%20section/first%20/mobile.png",
+        "mobileImageWidth": 1122,
+        "mobileImageHeight": 1402,
+        "tagline": "Made for the way you live",
+        "heading": ["Let Fresh Air In.", "Keep Insects Out."],
+        "description": "Pleated screens that bring comfort and a considered finish to your home.",
+        "buttons": [
+          { "label": "Explore Balcony Pleats", "href": "/products/balcony-pleats", "style": "gold" },
+          { "label": "Get a Free Quote", "href": "/contact", "style": "outline" }
+        ]
+      },
+      {
+        "desktopImage": "/hero%20section/second/desktop.png",
+        "desktopImageWidth": 1789,
+        "desktopImageHeight": 879,
+        "mobileImage": "/hero%20section/second/mobile.png",
+        "mobileImageWidth": 1122,
+        "mobileImageHeight": 1402,
+        "tagline": "A refined fit for your windows",
+        "heading": ["A Clearer View.", "A More Comfortable Home."],
+        "description": "Explore flexible screening made for everyday living and natural airflow.",
+        "buttons": [
+          { "label": "Explore Window Pleats", "href": "/products/window-pleats", "style": "gold" },
+          { "label": "Get a Free Quote", "href": "/contact", "style": "outline" }
+        ]
+      },
+      {
+        "desktopImage": "/hero%20section/third/desktop.png",
+        "desktopImageWidth": 1789,
+        "desktopImageHeight": 879,
+        "mobileImage": "/hero%20section/third/mobile.png",
+        "mobileImageWidth": 1122,
+        "mobileImageHeight": 1402,
+        "tagline": "Designed around your opening",
+        "heading": ["Everyday Protection.", "Thoughtful Design."],
+        "description": "Discover elegant pleated mesh solutions for balconies, windows and doors.",
+        "buttons": [
+          { "label": "Explore Mesh Doors", "href": "/products/pleated-mesh-doors", "style": "gold" },
+          { "label": "Get a Free Quote", "href": "/contact", "style": "outline" }
+        ]
+      }
     ],
     "benefitsLabel": "Velora benefits",
-    "benefits": ["Elegant Design", "Everyday Comfort", "Custom-fit Solutions"]
+    "benefits": ["Elegant Design", "Everyday Comfort", "Custom-fit Solutions"],
+    "carouselLabel": "Featured Velora solutions",
+    "slideLabel": "Hero slide",
+    "showSlideControls": true
+  },
+  "productMegaMenu": {
+    "label": "Explore our products",
+    "exploreLabel": "Explore",
+    "mobileToggleLabel": "Show product categories",
+    "products": [
+      { "slug": "balcony-pleats", "desktopImage": "/navbar/balcony%20pleats/desktop.png", "mobileImage": "/navbar/balcony%20pleats/mobile.png", "desktopImageWidth": 1254, "desktopImageHeight": 1254, "mobileImageWidth": 941, "mobileImageHeight": 1672 },
+      { "slug": "window-pleats", "desktopImage": "/navbar/window%20pleats/desktop.png", "mobileImage": "/navbar/window%20pleats/mobile.png", "desktopImageWidth": 1254, "desktopImageHeight": 1254, "mobileImageWidth": 941, "mobileImageHeight": 1672 },
+      { "slug": "window-screens", "desktopImage": "/navbar/window%20screans/desktop.png", "mobileImage": "/navbar/window%20screans/mobile.png", "desktopImageWidth": 1254, "desktopImageHeight": 1254, "mobileImageWidth": 941, "mobileImageHeight": 1672 },
+      { "slug": "pleated-mesh-doors", "desktopImage": "/navbar/pleated%20mesh%20doors/desktop.png", "mobileImage": "/navbar/pleated%20mesh%20doors/mobile.png", "desktopImageWidth": 1254, "desktopImageHeight": 1254, "mobileImageWidth": 941, "mobileImageHeight": 1672 }
+    ]
   },
   "productSection": {
     "eyebrow": "Our Product Range",

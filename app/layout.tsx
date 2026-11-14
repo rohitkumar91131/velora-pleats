@@ -18,6 +18,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const megaMenuProducts = site.productMegaMenu.products.flatMap((menuProduct) => {
+    const product = site.products.find((item) => item.name === menuProduct.slug);
+    return product ? [{
+      ...menuProduct,
+      title: product.title,
+      description: product.cardDescription,
+      href: product.href,
+      alt: product.image.alt,
+    }] : [];
+  });
+
   return (
     <html lang="en">
       <body>
@@ -27,7 +38,10 @@ export default function RootLayout({
           logoHomeLabel={site.site.logoHomeLabel}
           mainNavigationLabel={site.accessibility.mainNavigation}
           mobileNavigationLabel={site.accessibility.mobileNavigation}
+          openNavigationLabel={site.accessibility.openNavigation}
+          closeNavigationLabel={site.accessibility.closeNavigation}
           navigation={site.navigation}
+          productMegaMenu={{ ...site.productMegaMenu, products: megaMenuProducts }}
           actions={site.actions}
         />
         {children}
