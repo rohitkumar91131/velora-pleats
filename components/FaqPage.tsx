@@ -1,5 +1,5 @@
 import Link from "next/link";
-import PageHero, { type PageHeroData } from "@/components/PageHero";
+import type { PageHeroData } from "@/components/PageHero";
 
 export type FaqPageData = {
   hero: PageHeroData;
@@ -9,8 +9,11 @@ export type FaqPageData = {
 
 export default function FaqPage({ data }: { data: FaqPageData }) {
   return (
-    <main>
-      <PageHero data={data.hero} />
+    <main className="faq-page">
+      <header className="faq-page-heading">
+        <h1>{data.hero.title}</h1>
+        <p>{data.hero.description}</p>
+      </header>
       <section className="faq-section">
         <div className="faq-list">
           {data.questions.map((item) => (

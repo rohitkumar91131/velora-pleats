@@ -1694,6 +1694,30 @@ body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
   padding: 54px 24px 4px;
   text-align: center;
 }
+
+.faq-page { background: var(--ivory); }
+.faq-page-heading {
+  padding: 54px 24px 0;
+  text-align: center;
+}
+.faq-page-heading h1 {
+  margin: 0;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.35rem, 4.5vw, 3.25rem);
+  font-weight: 400;
+  letter-spacing: -.03em;
+  line-height: 1.06;
+  text-wrap: balance;
+}
+.faq-page-heading p {
+  margin: 12px auto 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.faq-page .faq-section { padding-top: 26px; }
+.faq-page .faq-list { text-align: left; }
+.faq-page .faq-list > .text-action { margin-top: 26px; }
 .gallery-page-heading h1 {
   margin: 0;
   color: var(--ink);
@@ -2234,6 +2258,11 @@ body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
   .faq-section {
     padding: 49px 20px 66px;
   }
+
+  .faq-page-heading { padding: 35px 18px 0; }
+  .faq-page-heading h1 { font-size: clamp(2.1rem, 8vw, 2.7rem); }
+  .faq-page-heading p { margin-top: 9px; font-size: 12px; }
+  .faq-page .faq-section { padding-top: 20px; }
 
   .legal-topic h2 {
     font-size: 24px;
