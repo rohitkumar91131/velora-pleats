@@ -148,7 +148,8 @@
     "seo": { "title": "Our Products | Velora Pleats", "description": "Explore Velora Pleats screening solutions for balconies, windows and doors." },
     "hero": {
       "title": "Our Products",
-      "description": "Premium mosquito mesh solutions for every opening in your home."
+      "description": "Premium mosquito mesh solutions for every opening in your home.",
+      "breadcrumbs": [{ "label": "Home", "href": "/" }, { "label": "Products" }]
     },
     "listLabel": "All Velora products",
     "viewDetailsLabel": "View details"
@@ -157,8 +158,17 @@
     "eyebrow": "Velora product collection",
     "sectionEyebrow": "A refined fit for your home",
     "galleryLabel": "Product images",
+    "tabsLabel": "Product information sections",
     "quoteLabel": "Request a Quote",
-    "whatsappLabel": "WhatsApp"
+    "whatsappLabel": "WhatsApp",
+    "tabs": [
+      { "label": "Overview", "href": "#overview" },
+      { "label": "Features", "href": "#features" },
+      { "label": "Specifications", "href": "#features" },
+      { "label": "Applications", "href": "#features" },
+      { "label": "Gallery", "href": "#gallery" },
+      { "label": "FAQs", "href": "/faqs" }
+    ]
   },
   "products": [
     {
