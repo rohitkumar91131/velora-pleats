@@ -13,6 +13,7 @@ function SlideImage({ slide, className }: { slide: HeroSlide; className: string 
   return (
     <picture className={className}>
       <source media="(max-width: 720px)" srcSet={slide.mobileImage} />
+      <source media="(min-width: 721px) and (max-width: 1120px)" srcSet={slide.tabletImage} />
       <Image
         className="hero-image"
         src={slide.desktopImage}
@@ -53,6 +54,7 @@ export default function HeroSection() {
   const activeSlide = slides[activeIndex];
   const heroRatios = {
     "--hero-desktop-ratio": `${slides[0].desktopImageWidth} / ${slides[0].desktopImageHeight}`,
+    "--hero-tablet-ratio": `${slides[0].tabletImageWidth} / ${slides[0].tabletImageHeight}`,
     "--hero-mobile-ratio": `${slides[0].mobileImageWidth} / ${slides[0].mobileImageHeight}`,
     "--hero-interval": `${heroSection.interval}ms`,
   } as CSSProperties;

@@ -2216,6 +2216,7 @@ body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
 
 /* Responsive homepage refinements: keep hero content inside the image at tablet widths. */
 @media (min-width: 721px) and (max-width: 1120px) {
+  body:has(.home-page) .hero { aspect-ratio: var(--hero-tablet-ratio); }
   body:has(.home-page) .hero-copy {
     justify-content: flex-start;
     padding: 82px 0 10px;
