@@ -779,7 +779,7 @@ body {
   .hero-benefits { gap: 18px; margin-top: 16px; }
 }
 
-@media (min-width: 721px) and (max-width: 960px) {
+@media (min-width: 721px) and (max-width: 1120px) {
   .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
@@ -1341,7 +1341,7 @@ body:has(.home-page) .product-card-body { padding: 13px 15px 16px; }
   padding: 5px 0 5px 20px;
   border-left: 1px solid rgb(223 189 116 / 44%);
 }
-.home-benefit-mark { color: #e0bf78; font-size: 25px; line-height: 1; }
+.home-benefit-mark { display: block; width: 26px; height: 26px; color: #e0bf78; flex: 0 0 auto; }
 .home-benefit h3 {
   margin: 9px 0 0;
   font: 500 17px/1.12 Georgia, "Times New Roman", serif;
@@ -2212,4 +2212,104 @@ body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
   .footer-bottom nav {
     flex-wrap: wrap;
   }
+}
+
+/* Responsive homepage refinements: keep hero content inside the image at tablet widths. */
+@media (min-width: 721px) and (max-width: 1120px) {
+  body:has(.home-page) .hero-copy {
+    justify-content: flex-start;
+    padding: 82px 0 10px;
+  }
+  body:has(.home-page) .hero-content {
+    width: min(100%, 440px);
+    transform: none;
+  }
+  body:has(.home-page) .hero-tagline {
+    margin-bottom: 6px;
+    font-size: 9px;
+    letter-spacing: .14em;
+  }
+  body:has(.home-page) .hero-title {
+    max-width: 18ch;
+    font-size: clamp(1.75rem, 4vw, 2rem);
+    line-height: .92;
+  }
+  body:has(.home-page) .hero-description {
+    max-width: 34ch;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  body:has(.home-page) .hero-actions { gap: 8px; margin-top: 11px; }
+  body:has(.home-page) .hero-button { min-height: 36px; padding: 0 12px; font-size: 10px; }
+  body:has(.home-page) .hero-benefits { font-size: 9px; }
+  body:has(.home-page) .hero-benefits li { gap: 6px; padding: 0 10px; }
+  body:has(.home-page) .hero-benefit-icon { width: 17px; height: 17px; }
+  body:has(.home-page) .hero-controls { margin-top: 5px; }
+  .home-testimonials-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-testimonials-grid li:last-child { grid-column: 1 / -1; }
+}
+
+@media (max-width: 720px) {
+  body:has(.home-page) .hero-copy {
+    width: calc(100% - 32px);
+    padding-top: clamp(96px, 28vw, 180px);
+    padding-bottom: 12px;
+  }
+  body:has(.home-page) .hero-content { width: 100%; }
+  body:has(.home-page) .hero-title {
+    max-width: 12ch;
+    font-size: clamp(2rem, 8.8vw, 3.1rem);
+    line-height: .94;
+  }
+  body:has(.home-page) .hero-tagline {
+    max-width: 100%;
+    margin-bottom: 10px;
+    font-size: clamp(8px, 2.3vw, 10px);
+    letter-spacing: .1em;
+    white-space: normal;
+  }
+  body:has(.home-page) .hero-description { max-width: 34ch; font-size: 13px; }
+  body:has(.home-page) .hero-benefits {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px 10px;
+    font-size: 10px;
+  }
+  body:has(.home-page) .hero-benefits li { min-width: 0; }
+  body:has(.home-page) .hero-benefits li span { overflow-wrap: anywhere; }
+  body:has(.home-page) .home-benefits-inner { gap: 16px 12px; }
+  body:has(.home-page) .home-benefit { padding-left: 12px; }
+  body:has(.home-page) .home-benefit-mark { width: 22px; height: 22px; }
+  body:has(.home-page) .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 560px) {
+  body:has(.home-page) .product-grid { grid-template-columns: 1fr; }
+  body:has(.home-page) .product-card-body { padding: 14px 16px 16px; }
+  body:has(.home-page) .product-card-title { font-size: 21px; }
+  body:has(.home-page) .product-card-description { font-size: 12px; }
+  body:has(.home-page) .home-testimonials-grid { grid-template-columns: 1fr; }
+  body:has(.home-page) .home-testimonials-grid li:last-child { grid-column: auto; }
+}
+
+@media (max-width: 420px) {
+  body:has(.home-page) .hero-copy { padding-top: 24%; }
+  body:has(.home-page) .hero-title { max-width: 16ch; font-size: clamp(1.85rem, 8.6vw, 2.25rem); }
+  body:has(.home-page) .hero-description { margin-top: 9px; font-size: 12px; }
+  body:has(.home-page) .hero-actions { display: grid; grid-template-columns: 1fr; }
+  body:has(.home-page) .hero-button { width: min(100%, 230px); min-height: 42px; font-size: 11px; }
+  body:has(.home-page) .hero-benefits { font-size: 9px; }
+  body:has(.home-page) .home-benefits-inner { grid-template-columns: 1fr 1fr; }
+  body:has(.home-page) .home-benefits-intro { grid-column: 1 / -1; }
+  body:has(.home-page) .home-benefit h3 { font-size: 14px; }
+  body:has(.home-page) .home-benefit p { font-size: 10px; }
+}
+
+@media (max-width: 360px) {
+  body:has(.home-page) .hero-copy { padding-top: 20%; }
+  body:has(.home-page) .hero-title { font-size: 1.65rem; }
+  body:has(.home-page) .hero-description { font-size: 11px; line-height: 1.35; }
+  body:has(.home-page) .hero-actions { gap: 7px; margin-top: 8px; }
+  body:has(.home-page) .hero-button { min-height: 38px; }
 }
