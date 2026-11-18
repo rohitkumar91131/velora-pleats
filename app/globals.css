@@ -1215,6 +1215,33 @@ code {
   line-height: 1.65;
 }
 
+.why-velora-page { background: var(--paper); }
+.why-velora-breadcrumbs {
+  width: min(calc(100% - 48px), 1220px);
+  margin: 0 auto;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.why-velora-breadcrumbs a { color: inherit; text-decoration: none; }
+.why-velora-breadcrumbs a:hover { color: var(--gold-on-light); }
+.why-velora-page .editorial-section { padding: 32px 24px 58px; }
+.why-velora-page .editorial-eyebrow { display: none; }
+.why-velora-page .editorial-main { grid-template-columns: 0.9fr 1.1fr; }
+.why-velora-page .editorial-image img { display: block; border-radius: 9px; }
+.why-velora-page .editorial-features { gap: 0; margin-top: 40px; }
+.why-velora-page .editorial-features li {
+  min-height: 116px;
+  padding: 5px 18px 0;
+  border-top: 0;
+  border-right: 1px solid var(--gold-border-medium);
+}
+.why-velora-page .editorial-features li:first-child { padding-left: 0; }
+.why-velora-page .editorial-features li:last-child { border-right: 0; }
+.why-velora-page .editorial-feature-icon { display: block; margin-bottom: 12px; }
+.why-velora-page .editorial-features h3 { font-size: 17px; }
+.why-velora-page .editorial-features p { font-size: 11px; }
+
 .home-gallery-section {
   padding: 82px 24px 46px;
   background: var(--ivory);
@@ -2072,6 +2099,16 @@ body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
   .editorial-section {
     padding: 60px 20px;
   }
+
+  .why-velora-breadcrumbs { width: calc(100% - 36px); padding-top: 18px; }
+  .why-velora-page .editorial-section { padding: 25px 18px 42px; }
+  .why-velora-page .editorial-main { grid-template-columns: 1fr; }
+  .why-velora-page .editorial-features { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 0; margin-top: 28px; }
+  .why-velora-page .editorial-features li { min-height: 0; padding: 0 12px; border-right: 0; }
+  .why-velora-page .editorial-features li:nth-child(odd) { padding-left: 0; border-right: 1px solid var(--gold-border-medium); }
+  .why-velora-page .editorial-features li:nth-child(even) { padding-right: 0; }
+  .why-velora-page .editorial-feature-icon { margin-bottom: 8px; }
+  .why-velora-page .editorial-features h3 { font-size: 16px; }
 
   .editorial-main.image-left,
   .editorial-main.image-right {

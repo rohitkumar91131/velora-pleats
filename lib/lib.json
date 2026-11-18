@@ -346,16 +346,15 @@
       "seo": { "title": "Why Velora | Velora Pleats", "description": "Explore a considered approach to comfort, insect screening and home design." },
       "hero": { "eyebrow": "The Velora difference", "title": "Thoughtful Screening. Beautiful Living.", "description": "A balance of everyday comfort, functional protection and a look that complements your home.", "breadcrumbs": [{ "label": "Home", "href": "/" }, { "label": "Why Velora" }] },
       "section": {
-        "eyebrow": "Why choose Velora",
-        "heading": "A considered solution for modern homes.",
-        "description": "We believe screening should feel like a natural part of your home—not an afterthought. Velora focuses on solutions that bring together usability, appearance and a thoughtful fit.",
+        "eyebrow": "The Velora difference",
+        "heading": "Why Choose Velora Pleats?",
+        "description": "Thoughtfully designed mesh solutions that bring together protection, comfort and modern aesthetics.",
         "image": { "src": "/images/why-velora/considered-living.jpg", "alt": "Contemporary residential interior", "width": 1800, "height": 1200 },
-        "cta": { "label": "Talk to Our Team", "href": "/contact" },
         "features": [
-          { "title": "Insect Screening", "description": "A screening layer to help keep insects out." },
-          { "title": "Airflow", "description": "Enjoy natural ventilation through screened openings." },
-          { "title": "Aesthetics", "description": "Clean visual lines for contemporary residential spaces." },
-          { "title": "Fit & Installation", "description": "Discuss your measurements and installation requirements with our team." }
+          { "title": "Insect Protection", "description": "Helps keep unwanted insects outside your living spaces.", "icon": "/icons/why-velora/insect-protection.svg" },
+          { "title": "Natural Ventilation", "description": "Enjoy airflow while adding a screening layer.", "icon": "/icons/why-velora/natural-ventilation.svg" },
+          { "title": "Modern Aesthetics", "description": "A discreet look designed to complement your home.", "icon": "/icons/why-velora/modern-aesthetics.svg" },
+          { "title": "Custom Fit", "description": "Solutions planned around your opening and requirements.", "icon": "/icons/why-velora/custom-fit.svg" }
         ]
       }
     },

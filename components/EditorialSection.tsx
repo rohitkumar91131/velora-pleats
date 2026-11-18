@@ -9,7 +9,7 @@ export type EditorialData = {
   paragraphs?: string[];
   image?: ContentImageData;
   cta?: { label: string; href: string };
-  features?: Array<{ title: string; description: string }>;
+  features?: Array<{ title: string; description: string; icon?: string }>;
   livingTypesLabel?: string;
   livingTypes?: Array<{ label: string; icon: string }>;
 };
@@ -55,6 +55,7 @@ export default function EditorialSection({
         <ul className="editorial-features">
           {data.features.map((feature) => (
             <li key={feature.title}>
+              {feature.icon && <Image className="editorial-feature-icon" src={feature.icon} alt="" width={28} height={28} />}
               <h3>{feature.title}</h3>
               <p>{feature.description}</p>
             </li>
