@@ -61,9 +61,9 @@
     "transitionDuration": 0.8,
     "slides": [
       {
-        "desktopImage": "/hero%20section/first%20/desktop.png",
-        "desktopImageWidth": 1789,
-        "desktopImageHeight": 879,
+        "desktopImage": "/hero%20section/first%20/Modern%20Sunset%20Interior%20with%20Balcony%20Views.png",
+        "desktopImageWidth": 1939,
+        "desktopImageHeight": 811,
         "mobileImage": "/hero%20section/first%20/mobile.png",
         "mobileImageWidth": 1122,
         "mobileImageHeight": 1402,
@@ -76,9 +76,9 @@
         ]
       },
       {
-        "desktopImage": "/hero%20section/second/desktop.png",
-        "desktopImageWidth": 1789,
-        "desktopImageHeight": 879,
+        "desktopImage": "/hero%20section/second/Pasted%20image.png",
+        "desktopImageWidth": 1939,
+        "desktopImageHeight": 811,
         "mobileImage": "/hero%20section/second/mobile.png",
         "mobileImageWidth": 1122,
         "mobileImageHeight": 1402,
@@ -91,9 +91,9 @@
         ]
       },
       {
-        "desktopImage": "/hero%20section/third/desktop.png",
-        "desktopImageWidth": 1789,
-        "desktopImageHeight": 879,
+        "desktopImage": "/hero%20section/third/Pasted%20image.png",
+        "desktopImageWidth": 1939,
+        "desktopImageHeight": 811,
         "mobileImage": "/hero%20section/third/mobile.png",
         "mobileImageWidth": 1122,
         "mobileImageHeight": 1402,
