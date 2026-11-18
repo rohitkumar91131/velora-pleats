@@ -10,7 +10,7 @@ export default function Home() {
     <main className="home-page">
       <HeroSection />
       <ProductSection />
-      <HomeBenefits data={site.homeSections.difference.features} />
+      <HomeBenefits data={site.homeSections.difference} />
       <EditorialSection
         data={{
           ...site.homeSections.difference,

@@ -267,11 +267,17 @@
       "description": "A well-designed mesh solution should work beautifully and feel at home in your space. Velora brings together practical screening and a clean architectural look.",
       "image": { "src": "/images/why-velora/considered-living.jpg", "alt": "Considered mesh screening in a contemporary home", "width": 1800, "height": 1200 },
       "cta": { "label": "Why Choose Velora", "href": "/why-velora" },
+      "benefitsBand": {
+        "ariaLabel": "Why choose Velora Pleats",
+        "eyebrow": "The Velora difference",
+        "heading": ["Why Choose", "Velora Pleats?"],
+        "description": "Comfort, protection and thoughtful design for your home."
+      },
       "features": [
-        { "title": "Insect Protection", "description": "Helps keep unwanted insects outside your living spaces." },
-        { "title": "Natural Ventilation", "description": "Enjoy airflow while adding a screening layer." },
-        { "title": "Modern Aesthetics", "description": "A discreet look designed to complement your home." },
-        { "title": "Custom Fit", "description": "Solutions planned around your opening and requirements." }
+        { "title": "Insect Protection", "description": "Helps keep unwanted insects outside your living spaces.", "icon": "/icons/why-velora/insect-protection.svg" },
+        { "title": "Natural Ventilation", "description": "Enjoy airflow while adding a screening layer.", "icon": "/icons/why-velora/natural-ventilation.svg" },
+        { "title": "Modern Aesthetics", "description": "A discreet look designed to complement your home.", "icon": "/icons/why-velora/modern-aesthetics.svg" },
+        { "title": "Custom Fit", "description": "Solutions planned around your opening and requirements.", "icon": "/icons/why-velora/custom-fit.svg" }
       ]
     },
     "galleryPreview": {
