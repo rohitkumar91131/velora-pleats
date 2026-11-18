@@ -67,9 +67,9 @@
         "mobileImage": "/hero%20section/first%20/mobile.png",
         "mobileImageWidth": 1122,
         "mobileImageHeight": 1402,
-        "tagline": "Made for the way you live",
+        "tagline": "Premium pleated mosquito mesh doors",
         "heading": ["Let Fresh Air In.", "Keep Insects Out."],
-        "description": "Pleated screens that bring comfort and a considered finish to your home.",
+        "description": "Elegant, space-saving and high-performance mesh solutions for modern homes.",
         "buttons": [
           { "label": "Explore Balcony Pleats", "href": "/products/balcony-pleats", "style": "gold" },
           { "label": "Get a Free Quote", "href": "/contact", "style": "outline" }
@@ -108,10 +108,9 @@
     ],
     "benefitsLabel": "Velora benefits",
     "benefits": [
-      { "label": "Elegant Design", "icon": "elegant-design" },
-      { "label": "Insect Protection", "icon": "insect-protection" },
-      { "label": "Natural Ventilation", "icon": "natural-ventilation" },
-      { "label": "Custom-Fit Installation", "icon": "custom-fit" }
+        { "label": "Elegant Design", "icon": "elegant-design" },
+        { "label": "Everyday Comfort", "icon": "insect-protection" },
+        { "label": "Custom-Fit Solutions", "icon": "custom-fit" }
     ],
     "carouselLabel": "Featured Velora solutions",
     "slideLabel": "Hero slide",

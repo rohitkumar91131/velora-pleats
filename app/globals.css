@@ -1269,6 +1269,140 @@ code {
   object-fit: cover;
 }
 
+/* Homepage composition inspired by the Velora reference board. */
+body:has(.home-page) { background: #f7f5f0; }
+body:has(.home-page) .hero {
+  margin: 12px 14px 0;
+  border-radius: 15px;
+}
+body:has(.home-page) .hero-image { object-fit: contain; }
+body:has(.home-page) .hero-shade {
+  background: linear-gradient(90deg, rgb(18 17 15 / 38%) 0%, rgb(18 17 15 / 18%) 44%, transparent 78%);
+}
+body:has(.home-page) .hero-tagline { color: #f2d18c; }
+body:has(.home-page) .hero-title-accent { color: #fff4da; }
+body:has(.home-page) .hero-button-gold { background: #d9b56b; }
+body:has(.home-page) .hero-benefits { gap: 0; }
+body:has(.home-page) .product-section {
+  padding-top: 36px;
+  padding-bottom: 32px;
+  background: #f7f5f0;
+}
+body:has(.home-page) .product-section-heading { margin-bottom: 20px; }
+body:has(.home-page) .product-section-heading h2 { font-size: clamp(2rem, 3.1vw, 2.65rem); }
+body:has(.home-page) .product-section-intro { margin-top: 8px; }
+body:has(.home-page) .product-grid { gap: 14px; }
+body:has(.home-page) .product-card {
+  overflow: hidden;
+  border-color: #e7e0d5;
+  border-radius: 10px;
+  background: #fffefa;
+}
+body:has(.home-page) .product-card-title { font-size: 21px; }
+body:has(.home-page) .product-card-body { padding: 13px 15px 16px; }
+
+.home-benefits {
+  padding: 26px 24px;
+  background: #191815;
+  color: #fffaf0;
+}
+.home-benefits-inner {
+  display: grid;
+  width: min(100%, 1220px);
+  grid-template-columns: 1.2fr repeat(4, minmax(0, 1fr));
+  align-items: center;
+  gap: 22px;
+  margin: 0 auto;
+}
+.home-benefits-intro { padding-right: 18px; }
+.home-benefits-kicker {
+  margin: 0 0 7px;
+  color: #dfbd74;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.home-benefits-intro h2 {
+  margin: 0;
+  font: 400 clamp(1.5rem, 2.4vw, 2rem)/1.05 Georgia, "Times New Roman", serif;
+}
+.home-benefits-intro > p:last-child,
+.home-benefit p { color: rgb(255 250 240 / 76%); }
+.home-benefits-intro > p:last-child {
+  max-width: 28ch;
+  margin: 9px 0 0;
+  font-size: 11px;
+  line-height: 1.55;
+}
+.home-benefit {
+  min-height: 126px;
+  padding: 5px 0 5px 20px;
+  border-left: 1px solid rgb(223 189 116 / 44%);
+}
+.home-benefit-mark { color: #e0bf78; font-size: 25px; line-height: 1; }
+.home-benefit h3 {
+  margin: 9px 0 0;
+  font: 500 17px/1.12 Georgia, "Times New Roman", serif;
+}
+.home-benefit p { margin: 7px 0 0; font-size: 10px; line-height: 1.5; }
+body:has(.home-page) .editorial-section-soft { background: #f7f5f0; }
+body:has(.home-page) .editorial-section { padding-top: 50px; padding-bottom: 50px; }
+body:has(.home-page) .editorial-main { gap: clamp(28px, 5vw, 58px); }
+body:has(.home-page) .editorial-image img { display: block; border-radius: 12px; }
+body:has(.home-page) .editorial-copy h2 { font-size: clamp(2.2rem, 3.5vw, 3rem); }
+.home-testimonials {
+  padding: 28px 24px 36px;
+  background: #f7f5f0;
+}
+.home-testimonials-heading { width: min(100%, 1220px); margin: 0 auto 18px; }
+.home-testimonials-heading h2 {
+  margin: 0;
+  font: 400 clamp(1.5rem, 2.4vw, 2rem)/1.1 Georgia, "Times New Roman", serif;
+}
+.home-testimonials-grid {
+  display: grid;
+  width: min(100%, 1220px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.home-testimonials-grid li {
+  min-width: 0;
+  padding: 15px 18px;
+  border: 1px solid #e4ddd1;
+  border-radius: 10px;
+  background: #fffefa;
+}
+.review-quote-mark { color: #b18b48; font: 700 27px/1 Georgia, serif; }
+.home-testimonials-grid blockquote { margin: 3px 0 8px; font: 13px/1.5 Georgia, serif; }
+.review-stars { color: #c39a4b; font-size: 12px; letter-spacing: .12em; }
+.review-author { margin: 6px 0 0; font-size: 10px; font-weight: 700; }
+.review-author span { color: var(--muted); font-weight: 400; }
+body:has(.home-page) .cta-band { padding: 25px 24px; background: #191815; color: #fffaf0; }
+body:has(.home-page) .cta-eyebrow { color: #dfbd74; }
+body:has(.home-page) .cta-description { color: rgb(255 250 240 / 76%); }
+body:has(.home-page) .cta-inner h2 { font-size: clamp(1.55rem, 2.6vw, 2.15rem); }
+body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
+
+@media (max-width: 960px) {
+  .home-benefits-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .home-benefits-intro { grid-column: 1 / -1; }
+  .home-benefit { min-height: 0; }
+}
+@media (max-width: 720px) {
+  body:has(.home-page) .hero { margin: 8px 8px 0; border-radius: 12px; }
+  body:has(.home-page) .product-section { padding-top: 32px; }
+  .home-benefits { padding: 25px 18px; }
+  .home-benefit { padding-left: 13px; }
+  .home-benefit h3 { font-size: 15px; }
+  body:has(.home-page) .editorial-section { padding: 38px 18px; }
+  .home-testimonials { padding: 24px 18px 30px; }
+  .home-testimonials-grid { grid-template-columns: 1fr; gap: 9px; }
+}
+
 .products-list-section {
   padding: 76px 24px 88px;
   background: var(--ivory);
