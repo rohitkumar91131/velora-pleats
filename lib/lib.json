@@ -360,7 +360,7 @@
     },
     "gallery": {
       "seo": { "title": "Gallery | Velora Pleats", "description": "Explore visual inspiration for balconies, windows and door openings." },
-      "hero": { "eyebrow": "Ideas for your space", "title": "Installation Gallery", "description": "Explore visual inspiration for balconies, windows and door openings.", "breadcrumbs": [{ "label": "Home", "href": "/" }, { "label": "Gallery" }] },
+      "hero": { "eyebrow": "Ideas for your space", "title": "Our Installation Gallery", "description": "Explore visual inspiration for balconies, windows and door openings.", "breadcrumbs": [{ "label": "Home", "href": "/" }, { "label": "Gallery" }] },
       "filterLabel": "Filter gallery by opening type",
       "filters": [
         { "label": "All", "value": "all" },
