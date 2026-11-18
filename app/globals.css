@@ -1766,9 +1766,11 @@ body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
 }
 
 .contact-section {
-  padding: 66px 24px 88px;
+  padding: 54px 24px 78px;
   background: var(--ivory);
 }
+
+.contact-page { background: var(--ivory); }
 
 .contact-layout {
   display: grid;
@@ -1785,8 +1787,9 @@ body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
 }
 
 .contact-panel {
-  border: 1px solid var(--line);
-  background: var(--paper);
+  padding: 14px 30px 14px 0;
+  border: 0;
+  background: transparent;
   color: var(--ink);
 }
 
@@ -1852,8 +1855,13 @@ body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
 
 .form-panel {
   border: 1px solid var(--line);
+  border-radius: 9px;
   background: var(--paper);
 }
+
+.contact-page .section-eyebrow { margin-bottom: 10px; }
+.contact-page .contact-panel h2,
+.contact-page .form-panel h2 { font-size: clamp(2rem, 3vw, 2.55rem); }
 
 .form-description {
   margin: 12px 0 0;
@@ -2249,8 +2257,11 @@ body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
   }
 
   .contact-section {
-    padding: 44px 16px 72px;
+    padding: 36px 16px 58px;
   }
+
+  .contact-panel { padding: 4px 0 10px; }
+  .form-panel { padding: 22px 18px; }
 
   .contact-layout {
     grid-template-columns: 1fr;

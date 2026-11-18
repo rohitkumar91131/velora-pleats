@@ -1,5 +1,4 @@
 import Link from "next/link";
-import PageHero from "@/components/PageHero";
 import EnquiryForm from "@/components/EnquiryForm";
 import site from "@/lib/lib.json";
 
@@ -8,8 +7,7 @@ export default function ContactPage() {
   const brand = site.site;
 
   return (
-    <main>
-      <PageHero data={page.hero} />
+    <main className="contact-page">
       <section className="contact-section">
         <div className="contact-layout">
           <aside className="contact-panel">
