@@ -6,10 +6,15 @@ export type LegalPageData = {
   reviewNote: string;
 };
 
-export default function LegalContentPage({ data }: { data: LegalPageData }) {
+export default function LegalContentPage({ data, compact = false }: { data: LegalPageData; compact?: boolean }) {
   return (
-    <main>
-      <PageHero data={data.hero} />
+    <main className={compact ? "legal-page legal-page-compact" : "legal-page"}>
+      {compact ? (
+        <header className="legal-page-heading">
+          <h1>{data.hero.title}</h1>
+          <p>{data.hero.description}</p>
+        </header>
+      ) : <PageHero data={data.hero} />}
       <section className="legal-section">
         <div className="legal-content">
           {data.sections.map((section) => (

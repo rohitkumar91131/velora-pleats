@@ -5,5 +5,5 @@ import site from "@/lib/lib.json";
 export const metadata: Metadata = site.pages.privacy.seo;
 
 export default function PrivacyRoute() {
-  return <LegalContentPage data={site.pages.privacy} />;
+  return <LegalContentPage data={site.pages.privacy} compact />;
 }
