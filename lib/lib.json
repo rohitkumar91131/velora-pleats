@@ -147,13 +147,11 @@
     "href": "/products",
     "seo": { "title": "Our Products | Velora Pleats", "description": "Explore Velora Pleats screening solutions for balconies, windows and doors." },
     "hero": {
-      "eyebrow": "Discover the range",
       "title": "Our Products",
-      "description": "Screening solutions designed for the openings and spaces in your home.",
-      "breadcrumbs": [{ "label": "Home", "href": "/" }, { "label": "Products" }]
+      "description": "Premium mosquito mesh solutions for every opening in your home."
     },
     "listLabel": "All Velora products",
-    "viewDetailsLabel": "Explore product"
+    "viewDetailsLabel": "View details"
   },
   "productDetailPage": {
     "eyebrow": "Velora product collection",
@@ -168,7 +166,7 @@
       "href": "/products/balcony-pleats",
       "title": "Balcony Pleats",
       "cardDescription": "Pleated mesh solutions for balconies and wider openings.",
-      "listingDescription": "A considered screening option for balconies and large openings.",
+      "listingDescription": "Full-width pleated mesh for balconies and large openings.",
       "detailDescription": "Elegant pleated mesh solutions for balconies and larger openings.",
       "image": { "src": "/images/products/balcony-pleats.jpg", "alt": "Bright modern living room opening onto a balcony", "width": 1800, "height": 1224 },
       "images": [
@@ -192,7 +190,7 @@
       "href": "/products/window-pleats",
       "title": "Window Pleats",
       "cardDescription": "A neat, flexible screening option for modern windows.",
-      "listingDescription": "Flexible pleated screening for window applications.",
+      "listingDescription": "Sleek, flexible mesh for modern windows.",
       "detailDescription": "A neat, flexible screening option for modern windows.",
       "image": { "src": "/images/products/window-pleats.jpg", "alt": "Contemporary dining area with large screened windows", "width": 1800, "height": 1200 },
       "images": [
@@ -216,7 +214,7 @@
       "href": "/products/window-screens",
       "title": "Window Screens",
       "cardDescription": "Practical screening solutions for everyday ventilation.",
-      "listingDescription": "Practical screens for everyday home ventilation.",
+      "listingDescription": "Durable, discreet screening for everyday ventilation.",
       "detailDescription": "A simple way to add an insect-screening layer to selected window openings.",
       "image": { "src": "/images/products/window-screens.jpg", "alt": "Sunlit modern living room with wide windows", "width": 1800, "height": 1200 },
       "images": [
@@ -240,7 +238,7 @@
       "href": "/products/pleated-mesh-doors",
       "title": "Pleated Mesh Doors",
       "cardDescription": "Stylish mesh door solutions for comfortable living.",
-      "listingDescription": "Mesh door solutions that balance function and appearance.",
+      "listingDescription": "Stylish door solutions with smooth, space-saving operation.",
       "detailDescription": "Stylish pleated mesh door solutions for comfortable living.",
       "image": { "src": "/images/products/pleated-mesh-doors.jpg", "alt": "Warm contemporary living room with a large glass doorway", "width": 1800, "height": 1350 },
       "images": [

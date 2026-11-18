@@ -9,11 +9,13 @@ export default function ProductGrid({
   viewDetailsLabel,
   listLabel,
   descriptionType = "cardDescription",
+  imageSizes = "(max-width: 560px) 46vw, (max-width: 980px) 46vw, 290px",
 }: {
   products: Product[];
   viewDetailsLabel: string;
   listLabel: string;
   descriptionType?: "cardDescription" | "listingDescription";
+  imageSizes?: string;
 }) {
   return (
     <ul className="product-grid" aria-label={listLabel}>
@@ -23,7 +25,7 @@ export default function ProductGrid({
             <span className="product-card-media">
               <ContentImage
                 image={product.image}
-                sizes="(max-width: 560px) 46vw, (max-width: 980px) 46vw, 290px"
+                sizes={imageSizes}
               />
             </span>
             <span className="product-card-body">
