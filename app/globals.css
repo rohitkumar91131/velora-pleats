@@ -2272,8 +2272,9 @@ body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
   }
   body:has(.home-page) .hero-description { max-width: 34ch; font-size: 13px; }
   body:has(.home-page) .hero-benefits {
-    width: 100%;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: max-content;
+    max-width: 100%;
+    grid-template-columns: minmax(0, 1fr);
     gap: 7px 10px;
     font-size: 10px;
   }
