@@ -5,5 +5,5 @@ import site from "@/lib/lib.json";
 export const metadata: Metadata = site.pages.terms.seo;
 
 export default function TermsRoute() {
-  return <LegalContentPage data={site.pages.terms} />;
+  return <LegalContentPage data={site.pages.terms} compact />;
 }
