@@ -11,16 +11,7 @@ export default function Home() {
       <HeroSection />
       <ProductSection />
       <HomeBenefits data={site.homeSections.difference} />
-      <EditorialSection
-        data={{
-          ...site.homeSections.difference,
-          eyebrow: "Made for modern living",
-          heading: "Designed for Modern Living",
-          description: "Thoughtfully designed mesh solutions for apartments, villas and independent homes.",
-          features: undefined,
-        }}
-        variant="soft"
-      />
+      <EditorialSection data={site.homeSections.living} imageSide="left" variant="soft" />
       <HomeGalleryPreview />
     </main>
   );

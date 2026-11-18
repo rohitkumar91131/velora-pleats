@@ -280,6 +280,24 @@
         { "title": "Custom Fit", "description": "Solutions planned around your opening and requirements.", "icon": "/icons/why-velora/custom-fit.svg" }
       ]
     },
+    "living": {
+      "livingTypesLabel": "Home types",
+      "eyebrow": "Made for modern living",
+      "heading": "Designed for Modern Living",
+      "description": "Thoughtfully designed mesh solutions for apartments, villas and independent homes.",
+      "image": {
+        "src": "/images/why-velora/designed-for-modern-living.png",
+        "alt": "Pleated mesh doors opening from a warm modern living room to a leafy balcony",
+        "width": 1672,
+        "height": 941
+      },
+      "livingTypes": [
+        { "label": "Apartments", "icon": "/icons/living-types/apartments.svg" },
+        { "label": "Villas", "icon": "/icons/living-types/villas.svg" },
+        { "label": "Independent Homes", "icon": "/icons/living-types/independent-homes.svg" },
+        { "label": "Premium Homes", "icon": "/icons/living-types/premium-homes.svg" }
+      ]
+    },
     "galleryPreview": {
       "eyebrow": "Made for modern living",
       "heading": "Designed Around Your Space",

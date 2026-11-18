@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import ContentImage, { type ContentImageData } from "@/components/ContentImage";
 
@@ -9,6 +10,8 @@ export type EditorialData = {
   image?: ContentImageData;
   cta?: { label: string; href: string };
   features?: Array<{ title: string; description: string }>;
+  livingTypesLabel?: string;
+  livingTypes?: Array<{ label: string; icon: string }>;
 };
 
 export default function EditorialSection({
@@ -31,6 +34,16 @@ export default function EditorialSection({
           {data.description && <p className="editorial-description">{data.description}</p>}
           {data.paragraphs?.map((paragraph) => <p className="editorial-description" key={paragraph}>{paragraph}</p>)}
           {data.cta && <Link className="editorial-cta" href={data.cta.href}>{data.cta.label}<span aria-hidden="true"> →</span></Link>}
+          {data.livingTypes && (
+            <ul className="editorial-living-types" aria-label={data.livingTypesLabel}>
+              {data.livingTypes.map((type) => (
+                <li key={type.label}>
+                  <Image src={type.icon} alt="" width={48} height={48} />
+                  <span>{type.label}</span>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
         {data.image && (
           <figure className="editorial-image">
