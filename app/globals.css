@@ -1242,6 +1242,22 @@ code {
 .why-velora-page .editorial-features h3 { font-size: 17px; }
 .why-velora-page .editorial-features p { font-size: 11px; }
 
+.about-page { background: var(--paper); }
+.about-breadcrumbs {
+  width: min(calc(100% - 48px), 1220px);
+  margin: 0 auto;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.about-breadcrumbs a { color: inherit; text-decoration: none; }
+.about-breadcrumbs a:hover { color: var(--gold-on-light); }
+.about-page .editorial-section { padding: 32px 24px 72px; }
+.about-page .editorial-main { grid-template-columns: 0.9fr 1.1fr; }
+.about-page .editorial-image img { display: block; border-radius: 9px; }
+.about-page .editorial-copy h2 { max-width: 12ch; }
+.about-page .editorial-description { max-width: 56ch; }
+
 .home-gallery-section {
   padding: 82px 24px 46px;
   background: var(--ivory);
@@ -2131,6 +2147,11 @@ body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
   .why-velora-page .editorial-features li:nth-child(even) { padding-right: 0; }
   .why-velora-page .editorial-feature-icon { margin-bottom: 8px; }
   .why-velora-page .editorial-features h3 { font-size: 16px; }
+
+  .about-breadcrumbs { width: calc(100% - 36px); padding-top: 18px; }
+  .about-page .editorial-section { padding: 25px 18px 48px; }
+  .about-page .editorial-main { grid-template-columns: 1fr; }
+  .about-page .editorial-copy h2 { max-width: 100%; }
 
   .editorial-main.image-left,
   .editorial-main.image-right {
