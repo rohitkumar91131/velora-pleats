@@ -1272,8 +1272,9 @@ code {
 /* Homepage composition inspired by the Velora reference board. */
 body:has(.home-page) { background: #f7f5f0; }
 body:has(.home-page) .hero {
-  margin: 12px 14px 0;
-  border-radius: 15px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
 }
 body:has(.home-page) .hero-image { object-fit: contain; }
 body:has(.home-page) .hero-shade {
@@ -1393,7 +1394,7 @@ body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
   .home-benefit { min-height: 0; }
 }
 @media (max-width: 720px) {
-  body:has(.home-page) .hero { margin: 8px 8px 0; border-radius: 12px; }
+  body:has(.home-page) .hero { margin: 0; border-radius: 0; }
   body:has(.home-page) .product-section { padding-top: 32px; }
   .home-benefits { padding: 25px 18px; }
   .home-benefit { padding-left: 13px; }
