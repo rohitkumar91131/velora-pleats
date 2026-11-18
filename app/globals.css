@@ -1216,7 +1216,7 @@ code {
 }
 
 .why-velora-page { background: var(--paper); }
-.why-velora-page .editorial-section { padding: 0 0 34px; }
+.why-velora-page .editorial-section { padding: 0; }
 .why-velora-page .editorial-eyebrow { display: none; }
 .why-velora-page .editorial-main {
   width: 100%;
@@ -1224,9 +1224,9 @@ code {
   align-items: stretch;
   gap: 0;
 }
-.why-velora-page .editorial-copy { align-self: center; padding: 42px clamp(28px, 6vw, 92px); }
-.why-velora-page .editorial-copy h2 { max-width: 10ch; font-size: clamp(2.4rem, 4.2vw, 3.5rem); }
-.why-velora-page .editorial-description { max-width: 42ch; margin-top: 18px; font-size: 15px; line-height: 1.55; }
+.why-velora-page .editorial-copy { align-self: start; padding: 56px clamp(28px, 5vw, 76px) 30px; }
+.why-velora-page .editorial-copy h2 { max-width: 15ch; font-size: clamp(2.35rem, 3.7vw, 3.25rem); line-height: 1.06; }
+.why-velora-page .editorial-description { max-width: 42ch; margin-top: 20px; font-size: 15px; line-height: 1.55; }
 .why-velora-page .editorial-image { display: flex; align-items: center; }
 .why-velora-page .editorial-image img { display: block; border-radius: 0; }
 .why-velora-page .editorial-features {
@@ -1246,7 +1246,7 @@ code {
 .why-velora-page .editorial-features li:first-child { padding-left: 0; }
 .why-velora-page .editorial-features li:last-child { border-right: 0; }
 .why-velora-page .editorial-feature-icon { display: block; width: 42px; height: 42px; margin: 0 auto 13px; }
-.why-velora-page .editorial-features h3 { font-family: inherit; font-size: 16px; font-weight: 600; line-height: 1.3; }
+.why-velora-page .editorial-features h3 { max-width: 12ch; margin: 0 auto; font-family: inherit; font-size: 16px; font-weight: 600; line-height: 1.3; }
 
 .about-page { background: var(--paper); }
 .about-breadcrumbs {
@@ -2200,15 +2200,15 @@ body:has(.home-page) .cta-button { border-radius: 7px; background: #d9b56b; }
 
   .why-velora-page .editorial-section { padding: 0 0 24px; }
   .why-velora-page .editorial-main { grid-template-columns: 1fr; }
-  .why-velora-page .editorial-copy { grid-row: 1; padding: 38px 20px 28px; }
+  .why-velora-page .editorial-copy { grid-row: 1; padding: 32px 20px 24px; }
   .why-velora-page .editorial-image { grid-row: 2; }
-  .why-velora-page .editorial-copy h2 { max-width: 12ch; font-size: 2.55rem; }
+  .why-velora-page .editorial-copy h2 { max-width: 15ch; font-size: clamp(2.15rem, 9vw, 2.55rem); }
   .why-velora-page .editorial-features { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin-top: 0; padding: 18px 12px; }
   .why-velora-page .editorial-features li { min-height: 104px; padding: 9px 10px; border-right: 0; }
   .why-velora-page .editorial-features li:nth-child(odd) { padding-left: 0; border-right: 1px solid var(--gold-border-medium); }
   .why-velora-page .editorial-features li:nth-child(even) { padding-right: 0; }
   .why-velora-page .editorial-feature-icon { width: 34px; height: 34px; margin-bottom: 8px; }
-  .why-velora-page .editorial-features h3 { font-size: 14px; }
+  .why-velora-page .editorial-features h3 { max-width: 13ch; font-size: 13px; }
 
   .about-breadcrumbs { width: calc(100% - 36px); padding-top: 18px; }
   .about-page .editorial-section { padding: 25px 18px 48px; }
